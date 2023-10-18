@@ -10,7 +10,7 @@ export const About = () => {
         <p className="text-logoColorLight opacity-100 mb-2">
           Construindo um Legado de Excelência em Fitness
         </p>
-        <p className="opacity-60 text-[12px] mb-7">
+        <p className="opacity-60 text-[12px] hover:opacity-100 transition-all mb-7">
           Descubra a nossa jornada de dedicação ao fitness, paixão pela saúde e
           compromisso com a sua transformação física. Conheça a equipe que faz a
           diferença em nossa academia e saiba por que somos a escolha certa para
