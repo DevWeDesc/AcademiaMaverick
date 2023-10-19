@@ -5,7 +5,7 @@ import Image from "next/image";
 import { Nav } from "./Nav";
 
 export const Header = () => {
-  const [openHamburguer, setOpenHamburguer] = useState(true);
+  const [openHamburguer, setOpenHamburguer] = useState(false);
 
   const handleOpenHamburguer = () => {
     openHamburguer ? setOpenHamburguer(false) : setOpenHamburguer(true);
