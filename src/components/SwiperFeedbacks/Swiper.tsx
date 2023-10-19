@@ -19,7 +19,7 @@ export const SwiperFeedbacks = () => {
       className="mySwiperFeedback"
     >
       <SwiperSlide>
-        <div className="w-full flex cursor-move mt-7 flex-col gap-4 p-2 rounded-xl bg-[#181818]">
+        <div className="w-full flex cursor-move mt-10 flex-col gap-4 p-4 rounded-xl bg-[#181818]">
           <div className="flex gap-6 m-0 items-center">
             <Image
               className="max-w-[56px] max-h-[56px]"
@@ -39,7 +39,7 @@ export const SwiperFeedbacks = () => {
         </div>
       </SwiperSlide>
       <SwiperSlide>
-        <div className="w-full flex mt-7 flex-col gap-4 p-2 rounded-xl bg-[#181818]">
+        <div className="w-full flex cursor-move mt-10 flex-col gap-4 p-4 rounded-xl bg-[#181818]">
           <div className="flex gap-6 m-0 items-center">
             <Image
               className="max-w-[56px] max-h-[56px]"
@@ -59,7 +59,7 @@ export const SwiperFeedbacks = () => {
         </div>
       </SwiperSlide>
       <SwiperSlide>
-        <div className="w-full flex mt-7 flex-col gap-4 p-2 rounded-xl bg-[#181818]">
+        <div className="w-full flex cursor-move mt-10 flex-col gap-4 p-4 rounded-xl bg-[#181818]">
           <div className="flex gap-6 m-0 items-center">
             <Image
               className="max-w-[56px] max-h-[56px]"

@@ -3,7 +3,7 @@ import { SwiperFeedbacks } from "./SwiperFeedbacks/Swiper";
 
 export const Feedbacks = () => {
   return (
-    <div className="py-12 ">
+    <div className="py-12 bg-gradient-to-r from-black to-zinc-800">
       <div className="pt-12 pb-7 flex flex-col gap-7 px-5">
         <h2 className="text-2xl font-bold text-center">
           Nossas Avaliações dos Nossos Clientes!
