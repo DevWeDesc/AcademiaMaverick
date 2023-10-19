@@ -1,3 +1,5 @@
+import { ReactNode } from "react";
+
 export type IFeedbacks = {
   photo: string;
   name: string;
@@ -19,4 +21,8 @@ type ArrayBenefits = {
 export type Ischedules = {
   days: string;
   schedules: string;
+};
+
+export type IContactsDefault = {
+  children: ReactNode;
 };
