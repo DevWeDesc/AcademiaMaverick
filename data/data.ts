@@ -1,4 +1,4 @@
-import { ICardPlans } from "../types/types";
+import { ICardPlans, Ischedules } from "../types/types";
 
 export const DataPlans: ICardPlans[] = [
   {
@@ -37,4 +37,10 @@ export const DataPlans: ICardPlans[] = [
       { content: "Acompanhamento de progresso" },
     ],
   },
+];
+
+export const schedulesData: Ischedules[] = [
+  { days: "Segunda a Sexta", schedules: " das 0:00 as 23:59" },
+  { days: "Sábado", schedules: "das 8:00 as 18:00" },
+  { days: "Domingo", schedules: "das 8:00 as 14:00" },
 ];

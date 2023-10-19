@@ -15,3 +15,8 @@ export type ICardPlans = {
 type ArrayBenefits = {
   content: string;
 };
+
+export type Ischedules = {
+  days: string;
+  schedules: string;
+};
