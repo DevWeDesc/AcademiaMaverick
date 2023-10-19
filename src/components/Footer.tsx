@@ -7,7 +7,7 @@ import { IContactsDefault } from "../../types/types";
 
 export const Footer = () => {
   return (
-    <div className="flex flex-col items-center py-8 gap-10 border-t-[2px] border-[#222222]">
+    <div className="flex flex-col items-center py-8 gap-10 border-t-[2px] border-[#222222] lg:hidden">
       <Image alt="" className="object-contain" src={Logo} />
       <div className="flex flex-col items-center gap-8">
         <div className="flex flex-col gap-5 items-center">

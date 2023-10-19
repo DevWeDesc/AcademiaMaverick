@@ -13,7 +13,7 @@ export const Header = () => {
 
   return (
     <div>
-      <div className="fixed w-full z-10 top-0 bg-black pl-3 pr-5 flex items-center justify-between lg:py-1 lg:border-b-[1px] lg:border-[#222222]">
+      <div className="fixed w-full z-10 top-0 bg-black pl-3 pr-5 flex items-center justify-between lg:py-1 lg:border-b-[1px] lg:border-[#222222] lg:hidden">
         <Image alt="Logo da empresa" src={Logo} />
         <div
           onClick={handleOpenHamburguer}

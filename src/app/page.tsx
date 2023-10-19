@@ -7,9 +7,14 @@ import { Footer } from "@/components/Footer";
 
 export default function Home() {
   return (
-    <div>
+    <div className="">
+      <div className="h-screen flex items-center justify-center">
+        <p className="font-bold text-2xl">
+          Versão Desktop sendo Desenvolvida...
+        </p>
+      </div>
       <Header />
-      <main className="">
+      <main className="lg:hidden">
         <section id="init">
           <Banner />
         </section>
