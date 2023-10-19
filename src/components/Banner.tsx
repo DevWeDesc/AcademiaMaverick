@@ -15,9 +15,11 @@ export const Banner = () => {
             Alcance Seus Objetivos de Fitness na Nossa Academia Maverick
             Premium!
           </p>
-          <button className="bg-[#252525] font-bold py-4 mt-8 w-full rounded-lg hover:opacity-90 transition-all">
-            Iniciar
-          </button>
+          <a href="#about" className="w-full">
+            <button className="bg-[#252525] font-bold py-4 mt-8 w-full rounded-lg hover:opacity-90 transition-all">
+              Iniciar
+            </button>
+          </a>
         </div>
       </div>
     </div>

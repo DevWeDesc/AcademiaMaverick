@@ -28,10 +28,12 @@ export const Footer = () => {
             size={30}
             className="hover:bg-blue-600 hover:p-1 rounded-md transition-all"
           />
-          <Instagram
-            size={30}
-            className="hover:bg-gradient-to-r from-purple-500 to-pink-500 hover:p-1 rounded-md transition-all"
-          />
+          <a href="https://www.instagram.com/maverickacademia/">
+            <Instagram
+              size={30}
+              className="hover:bg-gradient-to-r from-purple-500 to-pink-500 hover:p-1 rounded-md transition-all"
+            />
+          </a>
         </div>
         <ContactsDefault>
           <Phone size={16} />
