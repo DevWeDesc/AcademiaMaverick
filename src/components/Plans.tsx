@@ -4,7 +4,7 @@ import { DataPlans } from "../../data/data";
 
 export const Plans = () => {
   return (
-    <div className="flex flex-col px-5 py-20 gap-5 items-center">
+    <div className="flex flex-col px-5 pt-[100px] pb-20 gap-5 items-center">
       <p className="text-logoColorLight font-semibold">
         Nossos Planos Acessíveis e Flexíveis
       </p>

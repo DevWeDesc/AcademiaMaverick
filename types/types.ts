@@ -26,3 +26,13 @@ export type Ischedules = {
 export type IContactsDefault = {
   children: ReactNode;
 };
+
+export type INav = {
+  navOpen: boolean;
+  HandleNavOpen: () => void;
+};
+
+export type IDataNav = {
+  url: string;
+  name: string;
+};

@@ -4,7 +4,7 @@ import { SwiperAbout } from "./SwiperAbout/SwiperAbout";
 export const About = () => {
   return (
     <>
-      <div className="flex flex-col pt-20 px-5">
+      <div className="flex flex-col pt-[100px] px-5">
         <h2 className="font-bold text-2xl">Nossa História!</h2>
         <div className="w-[3rem] h-[2px] bg-logoColor mb-5" />
         <p className="text-logoColorLight opacity-100 mb-2">
