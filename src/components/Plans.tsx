@@ -1,5 +1,6 @@
 import React from "react";
 import { CardPlans } from "./CardPlans";
+import { DataPlans } from "../../data/data";
 
 export const Plans = () => {
   return (
@@ -13,7 +14,14 @@ export const Plans = () => {
         </h2>
         <div className="h-[2px] rounded-full w-16 bg-logoColorLight" />
       </div>
-      <CardPlans />
+      {DataPlans.map((data) => (
+        <CardPlans
+          key={data.id}
+          title={data.title}
+          price={data.price}
+          benefits={data.benefits}
+        />
+      ))}
     </div>
   );
 };

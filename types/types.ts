@@ -6,6 +6,7 @@ export type IFeedbacks = {
 };
 
 export type ICardPlans = {
+  id?: number;
   title: string;
   price: string;
   benefits: ArrayBenefits[];
