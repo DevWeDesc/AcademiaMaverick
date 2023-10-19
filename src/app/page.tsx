@@ -3,6 +3,7 @@ import { Banner } from "@/components/Banner";
 import { Header } from "@/components/Header";
 import { Feedbacks } from "@/components/Feedbacks";
 import { Plans } from "@/components/Plans";
+import { Footer } from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
           <Plans />
         </section>
       </main>
+      <Footer />
     </div>
   );
 }
