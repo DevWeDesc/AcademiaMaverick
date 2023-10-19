@@ -1,4 +1,5 @@
 import React from "react";
+import { SwiperFeedbacks } from "./SwiperFeedbacks/Swiper";
 
 export const Feedbacks = () => {
   return (
@@ -18,6 +19,7 @@ export const Feedbacks = () => {
             bem-estar em uma comunidade dedicada ao fitness.
           </p>
         </div>
+        <SwiperFeedbacks />
       </div>
     </div>
   );
