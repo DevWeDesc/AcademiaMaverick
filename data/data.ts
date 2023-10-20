@@ -9,21 +9,9 @@ export const DataNav: IDataNav[] = [
 
 export const DataPlans: ICardPlans[] = [
   {
-    id: 1,
-    title: "Premium Mensal",
-    price: "69,99",
-    benefits: [
-      { content: "Acesso ilimitado à academia" },
-      { content: "Aulas em grupo inclusas" },
-      { content: "Consulta inicial com um treinador" },
-      { content: "Sessões de treinamento personalizado" },
-      { content: "Acompanhamento de progresso" },
-    ],
-  },
-  {
     id: 2,
-    title: "Premium Mensal",
-    price: "69,99",
+    title: "Premium Anual",
+    price: "74,90",
     benefits: [
       { content: "Acesso ilimitado à academia" },
       { content: "Aulas em grupo inclusas" },
@@ -34,8 +22,32 @@ export const DataPlans: ICardPlans[] = [
   },
   {
     id: 3,
-    title: "Premium Mensal",
-    price: "69,99",
+    title: "Pro Semestral",
+    price: "92,90",
+    benefits: [
+      { content: "Acesso ilimitado à academia" },
+      { content: "Aulas em grupo inclusas" },
+      { content: "Consulta inicial com um treinador" },
+      { content: "Sessões de treinamento personalizado" },
+      { content: "Acompanhamento de progresso" },
+    ],
+  },
+  {
+    id: 1,
+    title: "Plus Trimestrol",
+    price: "99,90",
+    benefits: [
+      { content: "Acesso ilimitado à academia" },
+      { content: "Aulas em grupo inclusas" },
+      { content: "Consulta inicial com um treinador" },
+      { content: "Sessões de treinamento personalizado" },
+      { content: "Acompanhamento de progresso" },
+    ],
+  },
+  {
+    id: 4,
+    title: "Basic Mensal",
+    price: "109,90",
     benefits: [
       { content: "Acesso ilimitado à academia" },
       { content: "Aulas em grupo inclusas" },
