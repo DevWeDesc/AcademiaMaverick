@@ -3,7 +3,7 @@ import { SwiperAbout } from "./SwiperAbout/SwiperAbout";
 
 export const About = () => {
   return (
-    <div className="lg:grid lg:grid-cols-2 lg:gap-11 lg:px-36 lg:mt-40">
+    <div className="lg:grid lg:grid-cols-2 lg:gap-11 lg:px-36 lg:py-28">
       <div className="flex flex-col pt-[100px] lg:w-full lg:pt-0 lg:justify-center px-5">
         <h2 className="font-bold text-2xl lg:text-5xl">Nossa História!</h2>
         <div className="w-[3rem] h-[2px] bg-logoColor mb-5 lg:mt-1 lg:w-20" />

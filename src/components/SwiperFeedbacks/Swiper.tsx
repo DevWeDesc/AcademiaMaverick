@@ -14,24 +14,25 @@ import stars from "../../../public/Frame 13.png";
 export const SwiperFeedbacks = () => {
   return (
     <Swiper
+      slidesPerView={2}
       navigation={true}
       modules={[Navigation]}
-      className="mySwiperFeedback"
+      className={`mySwiperFeedback`}
     >
       <SwiperSlide>
-        <div className="w-full flex cursor-move mt-10 flex-col gap-4 p-4 rounded-xl bg-[#181818]">
+        <div className="w-full flex cursor-move mt-10 flex-col gap-4 p-4 lg:px-5 lg:py-14 rounded-xl bg-[#181818]">
           <div className="flex gap-6 m-0 items-center">
             <Image
-              className="max-w-[56px] max-h-[56px]"
+              className="max-w-[56px] max-h-[56px] lg:max-w-[64px] lg:max-h-[64px]"
               alt=""
               src={ImagePeople}
             />
             <div className="flex flex-col gap-1">
-              <p className="font-bold">Vinicius Henrique</p>
+              <p className="font-bold lg:text-xl">Vinicius Henrique</p>
               <Image alt="" src={stars} className="w-[86px]"></Image>
             </div>
           </div>
-          <p className="text-left text-[12px] font-medium">
+          <p className="text-left text-[12px] font-medium lg:text-lg">
             Esta academia é simplesmente incrível! Desde o momento em que
             entrei, fui recebido com uma equipe calorosa e amigável, além de
             instrutores experientes e motivadores.
@@ -39,19 +40,19 @@ export const SwiperFeedbacks = () => {
         </div>
       </SwiperSlide>
       <SwiperSlide>
-        <div className="w-full flex cursor-move mt-10 flex-col gap-4 p-4 rounded-xl bg-[#181818]">
+        <div className="w-full flex cursor-move mt-10 flex-col gap-4 p-4 lg:px-5 lg:py-14 rounded-xl bg-[#181818]">
           <div className="flex gap-6 m-0 items-center">
             <Image
-              className="max-w-[56px] max-h-[56px]"
+              className="max-w-[56px] max-h-[56px] lg:max-w-[64px] lg:max-h-[64px]"
               alt=""
               src={ImagePeople}
             />
             <div className="flex flex-col gap-1">
-              <p className="font-bold">Vinicius Henrique</p>
+              <p className="font-bold lg:text-xl">Vinicius Henrique</p>
               <Image alt="" src={stars} className="w-[86px]"></Image>
             </div>
           </div>
-          <p className="text-left text-[12px] font-medium">
+          <p className="text-left text-[12px] font-medium lg:text-lg">
             Esta academia é simplesmente incrível! Desde o momento em que
             entrei, fui recebido com uma equipe calorosa e amigável, além de
             instrutores experientes e motivadores.
@@ -59,19 +60,19 @@ export const SwiperFeedbacks = () => {
         </div>
       </SwiperSlide>
       <SwiperSlide>
-        <div className="w-full flex cursor-move mt-10 flex-col gap-4 p-4 rounded-xl bg-[#181818]">
+        <div className="w-full flex cursor-move mt-10 flex-col gap-4 p-4 lg:px-5 lg:py-14 rounded-xl bg-[#181818]">
           <div className="flex gap-6 m-0 items-center">
             <Image
-              className="max-w-[56px] max-h-[56px]"
+              className="max-w-[56px] max-h-[56px] lg:max-w-[64px] lg:max-h-[64px]"
               alt=""
               src={ImagePeople}
             />
             <div className="flex flex-col gap-1">
-              <p className="font-bold">Vinicius Henrique</p>
+              <p className="font-bold lg:text-xl">Vinicius Henrique</p>
               <Image alt="" src={stars} className="w-[86px]"></Image>
             </div>
           </div>
-          <p className="text-left text-[12px] font-medium">
+          <p className="text-left text-[12px] font-medium lg:text-lg">
             Esta academia é simplesmente incrível! Desde o momento em que
             entrei, fui recebido com uma equipe calorosa e amigável, além de
             instrutores experientes e motivadores.
