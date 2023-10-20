@@ -9,8 +9,10 @@ import {
   CircleDollarSign,
 } from "lucide-react";
 
-export const Nav = ({ navOpen }: INav) => {
-  const IconsNav = ({ name }: IDataNav) => {
+export const Nav = ({ navOpen, HandleNavOpen }: INav) => {
+  const [navSelection, setNavSelection] = useState("Inicio");
+
+  const IconsNav = ({ name }: IDataNav): React.JSX.Element => {
     if (name === "Inicio") {
       return <Home />;
     } else if (name === "Sobre Nós") {
@@ -24,12 +26,24 @@ export const Nav = ({ navOpen }: INav) => {
 
   return (
     <div
-      className={`text-sm fixed right-0 flex flex-col gap-6 p-10 h-[90vh] bg-black transition-all ${
-        navOpen ? "z-10 opacity-100" : "z-[-1] opacity-0 h-[90vh]"
+      className={`text-sm fixed right-0 flex top-20 flex-col gap-10 p-10 h-[90vh] bg-black transition-all ${
+        navOpen ? "z-10 opacity-100 " : "z-[-1] opacity-0 h-[90vh]"
       }`}
     >
       {DataNav.map((data, index) => (
-        <a className="flex items-center gap-2" href={data.url} key={index}>
+        <a
+          onClick={() => {
+            setNavSelection(data.name);
+            HandleNavOpen();
+          }}
+          className={`flex items-center gap-2 py-2 font-semibold ${
+            navSelection === data.name
+              ? "text-logoColor border-b border-logoColor"
+              : ""
+          }`}
+          href={data.url}
+          key={index}
+        >
           {IconsNav(data)}
           <span> {data.name}</span>
         </a>
