@@ -1,6 +1,7 @@
 import { ICardPlans, IDataNav, Ischedules } from "../types/types";
 
 export const DataNav: IDataNav[] = [
+  { name: "Inicio", url: "#init" },
   { name: "Sobre Nós", url: "#about" },
   { name: "Feedbacks", url: "#feedbacks" },
   { name: "Planos", url: "#plans" },
