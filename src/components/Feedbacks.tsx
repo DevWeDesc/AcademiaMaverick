@@ -1,6 +1,20 @@
+"use client";
 import { SwiperFeedbacks } from "./SwiperFeedbacks/Swiper";
+import { useEffect, useState, useRef } from "react";
 
 export const Feedbacks = () => {
+  const [slidesPerView, setSlidesPerView] = useState(2);
+  useEffect(() => {
+    if (window.innerWidth >= 1024) {
+      setSlidesPerView(2);
+    } else if (window.innerWidth >= 658) {
+      setSlidesPerView(2);
+    } else if (window.innerWidth >= 558) {
+      setSlidesPerView(1);
+    } else {
+      setSlidesPerView(1);
+    }
+  }, []);
   return (
     <div className="pt-12 pb-5 bg-gradient-to-r from-black to-zinc-800">
       <div className="pt-12 pb-7 flex flex-col gap-7 items-center px-5 lg:px-44">
@@ -18,7 +32,7 @@ export const Feedbacks = () => {
             bem-estar em uma comunidade dedicada ao fitness.
           </p>
         </div>
-        <SwiperFeedbacks />
+        <SwiperFeedbacks slidesPerView={slidesPerView} />
       </div>
     </div>
   );
