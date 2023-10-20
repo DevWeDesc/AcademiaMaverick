@@ -12,10 +12,11 @@ import stars from "../../../public/Frame 13.png";
 import { ISwiperFeedbacks } from "../../../types/types";
 
 export const SwiperFeedbacks = () => {
+  let windowPage = window.innerWidth;
   return (
     <Swiper
-      slidesPerView={window.innerWidth >= 1040 ? 2 : 1}
-      spaceBetween={window.innerWidth >= 1040 ? 30 : 0}
+      slidesPerView={windowPage >= 1040 ? 2 : 1}
+      spaceBetween={windowPage >= 1040 ? 30 : 0}
       navigation={true}
       modules={[Navigation]}
       className={`mySwiperFeedback`}

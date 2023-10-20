@@ -10,7 +10,7 @@ export default function Home() {
     <div className="">
       <Header />
       <main>
-        <section id="init" className="lg:hidden">
+        <section id="init">
           <Banner />
         </section>
         <section id="about">
