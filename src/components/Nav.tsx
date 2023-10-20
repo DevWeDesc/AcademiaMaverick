@@ -36,7 +36,7 @@ export const Nav = ({ navOpen, HandleNavOpen }: INav) => {
             setNavSelection(data.name);
             HandleNavOpen();
           }}
-          className={`flex items-center gap-2 py-2 font-semibold ${
+          className={`flex items-center gap-2 py-2 font-semibold lg:pr-6 lg:py-1 ${
             navSelection === data.name
               ? "text-logoColor border-b border-logoColor"
               : ""
@@ -44,7 +44,7 @@ export const Nav = ({ navOpen, HandleNavOpen }: INav) => {
           href={data.url}
           key={index}
         >
-          {IconsNav(data)}
+          <span className="lg:hidden">{IconsNav(data)}</span>
           <span> {data.name}</span>
         </a>
       ))}
