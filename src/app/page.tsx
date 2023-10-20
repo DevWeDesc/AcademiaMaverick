@@ -8,23 +8,18 @@ import { Footer } from "@/components/Footer";
 export default function Home() {
   return (
     <div className="">
-      <div className=" hidden lg:flex h-screen items-center justify-center">
-        <p className="font-bold text-2xl">
-          Versão Desktop sendo Desenvolvida...
-        </p>
-      </div>
       <Header />
-      <main className="lg:hidden">
+      <main>
         <section id="init">
           <Banner />
         </section>
-        <section id="about">
+        <section id="about" className="lg:hidden">
           <About />
         </section>
-        <section id="feedbacks">
+        <section id="feedbacks" className="lg:hidden">
           <Feedbacks />
         </section>
-        <section id="plans">
+        <section id="plans" className="lg:hidden">
           <Plans />
         </section>
       </main>
