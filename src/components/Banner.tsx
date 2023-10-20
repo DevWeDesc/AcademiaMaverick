@@ -5,7 +5,7 @@ import ImageBannerMobile from "../../public/ImageBannerMobile.png";
 export const Banner = () => {
   return (
     <div>
-      <div className="pt-[100px] w-screen h-auto lg:hidden">
+      <div className="pt-[80px] w-screen h-auto lg:hidden">
         <Image className="w-full" alt="" src={ImageBannerMobile} />
         <div className="relative bottom-10 flex flex-col items-center gap-1 p-5">
           <h2 className="text-2xl font-bold text-center max-w-[18rem]">

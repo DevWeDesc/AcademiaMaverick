@@ -14,10 +14,10 @@ export const Header = () => {
   return (
     <div>
       <div className="fixed w-full z-10 top-0 bg-black pl-3 pr-5 flex items-center justify-between lg:py-1 lg:border-b-[1px] lg:border-[#222222] lg:hidden">
-        <Image alt="Logo da empresa" src={Logo} />
+        <Image alt="Logo da empresa" className="w-20" src={Logo} />
         <div
           onClick={handleOpenHamburguer}
-          className="w-6 h-6 flex flex-col justify-center gap-[6px] opacity-60"
+          className="w-8 h-8 p-1 flex flex-col justify-center gap-[6px] opacity-60"
         >
           <div
             className={`${
