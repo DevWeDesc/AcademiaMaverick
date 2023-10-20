@@ -36,3 +36,7 @@ export type IDataNav = {
   url: string;
   name: string;
 };
+
+export type ISwiperFeedbacks = {
+  slidesPerView: number;
+};

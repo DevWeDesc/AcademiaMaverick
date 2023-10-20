@@ -1,5 +1,4 @@
 "use client";
-import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 
@@ -10,11 +9,13 @@ import ImageSwiper from "../../../public/Image.png";
 import Image from "next/image";
 import ImagePeople from "../../../public/Ellipse 2.png";
 import stars from "../../../public/Frame 13.png";
+import { ISwiperFeedbacks } from "../../../types/types";
 
 export const SwiperFeedbacks = () => {
   return (
     <Swiper
-      slidesPerView={2}
+      slidesPerView={window.innerWidth >= 1040 ? 2 : 1}
+      spaceBetween={window.innerWidth >= 1040 ? 30 : 0}
       navigation={true}
       modules={[Navigation]}
       className={`mySwiperFeedback`}

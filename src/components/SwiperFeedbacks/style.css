@@ -18,6 +18,10 @@
   --swiper-navigation-size: 32px;
   --swiper-navigation-color: #fff;
 } */
+
+@media (min-width: 1040px) {
+}
+
 .mySwiperFeedback .swiper-button-prev,
 .mySwiperFeedback .swiper-button-next {
   right: 0;

@@ -1,4 +1,3 @@
-import React from "react";
 import { SwiperFeedbacks } from "./SwiperFeedbacks/Swiper";
 
 export const Feedbacks = () => {
