@@ -8,7 +8,11 @@ export const Banner = () => {
     <div>
       <div className="pt-[80px] w-screen h-auto lg:grid lg:grid-cols-2">
         <Image className="w-full lg:hidden" alt="" src={ImageBannerMobile} />
-        <Image className="w-full" alt="" src={ImageBannerDektop} />
+        <Image
+          className="hidden lg:block w-full"
+          alt=""
+          src={ImageBannerDektop}
+        />
         <div className="relative bottom-10 flex flex-col items-center gap-1 p-5 lg:bottom-0 lg:justify-center lg:items-start lg:w-full lg:px-28">
           <h2 className="text-2xl font-bold text-center max-w-[18rem] lg:text-5xl lg:text-left lg:min-w-full">
             Transforme seu Corpo e sua Vida!
