@@ -6,10 +6,10 @@ import ImageBannerDektop from "../../public/ImageBannerDektop.png";
 export const Banner = () => {
   return (
     <div>
-      <div className="lg:hidden pt-[80px] w-screen h-auto lg:grid lg:grid-cols-2">
+      <div className="pt-[80px] lg:w-[98vw] lg:pt-[130px] w-screen h-auto lg:flex lg:flex-row">
         <Image className="w-full lg:hidden" alt="" src={ImageBannerMobile} />
         <Image
-          className="hidden lg:block w-full"
+          className="hidden lg:relative lg:block w-full"
           alt=""
           src={ImageBannerDektop}
         />

@@ -19,7 +19,7 @@ export default function Home() {
         <section id="feedbacks">
           <Feedbacks />
         </section>
-        <section id="plans" className="lg:hidden">
+        <section id="plans">
           <Plans />
         </section>
       </main>

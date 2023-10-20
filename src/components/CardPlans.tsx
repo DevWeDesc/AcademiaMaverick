@@ -18,7 +18,10 @@ export const CardPlans = ({ title, price, benefits }: ICardPlans) => {
           </p>
         </div>
         <div>
-          <p className="font-extrabold"> {price.substring(2)}</p>
+          <p className="font-extrabold">
+            {" "}
+            {price.length === 5 ? price.substring(2) : price.substring(3)}
+          </p>
           <p className="font-medium text-[10px] opacity-70">
             {`= R$ ${totalInFront} / Ano`}
           </p>
