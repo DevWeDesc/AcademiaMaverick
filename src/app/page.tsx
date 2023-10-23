@@ -10,7 +10,7 @@ export default function Home() {
     <div className="">
       <Header />
       <main>
-        <section id="init">
+        <section id="init" className="bg-black">
           <Banner />
         </section>
         <section id="about">

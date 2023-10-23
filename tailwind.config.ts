@@ -8,6 +8,17 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      theme: {
+        extend: {
+          backgroundColor: {
+            light: "#000", // Substitua pela cor de fundo desejada
+          },
+          textColor: {
+            light: "#FFF", // Substitua pela cor de texto desejada
+          },
+        },
+      },
+
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

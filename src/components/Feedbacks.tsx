@@ -16,7 +16,7 @@ export const Feedbacks = () => {
     }
   }, []);
   return (
-    <div className="pt-12 lg:py-20 pb-5 bg-gradient-to-r from-black to-zinc-800">
+    <div className="pt-12 lg:py-20 pb-5 bg-gradient-to-r from-black to-zinc-800 text-white">
       <div className="pt-12 pb-7 flex flex-col gap-7 items-center px-5 lg:px-44">
         <h2 className="text-2xl font-bold text-center lg:text-5xl lg:max-w-[793px]">
           Nossas Avaliações dos Nossos Clientes!
