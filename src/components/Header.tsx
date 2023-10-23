@@ -16,7 +16,7 @@ export const Header = () => {
       <Image alt="Logo da empresa" className="w-20" src={Logo} />
       <div
         onClick={handleOpenHamburguer}
-        className="w-8 h-8 p-1 flex flex-col justify-center gap-[6px] opacity-60 lg:hidden"
+        className="w-10 h-10 p-2 flex flex-col cursor-pointer hover:bg-zinc-700  rounded-full justify-center gap-[6px] opacity-60 lg:hidden"
       >
         <div
           className={`${
