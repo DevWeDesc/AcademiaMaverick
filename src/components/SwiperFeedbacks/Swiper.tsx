@@ -21,7 +21,7 @@ export const SwiperFeedbacks = ({ slidesPerView }: ISwiperFeedbacks) => {
     >
       {comentsData.map((data, index) => (
         <SwiperSlide key={index} className="cursor-grab active:cursor-grabbing">
-          <div className="w-full min-h-full flex cursor-grab active:cursor-grabbing mt-10 flex-col gap-4 p-4 lg:px-5 lg:py-14 rounded-xl bg-[#181818]">
+          <div className="w-full min-h-full flex cursor-grab active:cursor-grabbing mt-10 lg:mt-16 flex-col gap-4 p-4 lg:px-5 lg:py-14 rounded-xl bg-[#181818]">
             <div className="flex gap-6 m-0 items-center">
               {data.photo ? (
                 <Image

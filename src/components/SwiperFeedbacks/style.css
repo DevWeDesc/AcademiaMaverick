@@ -19,9 +19,6 @@
   --swiper-navigation-color: #fff;
 } */
 
-@media (min-width: 1040px) {
-}
-
 .mySwiperFeedback .swiper-button-prev,
 .mySwiperFeedback .swiper-button-next {
   right: 0;
@@ -322,4 +319,31 @@
 }
 .mySwiperFeedback .swiper-pagination-lock {
   display: none;
+}
+
+@media (min-width: 1040px) {
+  .mySwiperFeedback .swiper-button-prev,
+  .mySwiperFeedback .swiper-button-next {
+    right: 0;
+    top: 20px;
+    width: 52px;
+    height: 52px;
+    margin-top: calc(0px - (32px / 2));
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    border-radius: 50%;
+    border: 1px solid #3b393a;
+    background-color: #000;
+    color: #000;
+    opacity: 0.85;
+    transition: 0.2s;
+  }
+  .mySwiperFeedback .swiper-button-prev svg,
+  .mySwiperFeedback .swiper-button-next svg {
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+    transform-origin: center;
+  }
 }
