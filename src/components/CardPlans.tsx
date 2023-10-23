@@ -35,9 +35,14 @@ export const CardPlans = ({ title, price, benefits }: ICardPlans) => {
           </div>
         ))}
       </div>
-      <button className="text-xs font-bold shadow-sm hover:shadow-lg hover:shadow-zinc-800 border border-zinc-600 shadow-zinc-600 opacity-80 hover:opacity-100 transition-all  w-full py-3 rounded-lg">
-        Inscreva-se agora
-      </button>
+      <a
+        className="w-full"
+        href={`https://api.whatsapp.com/send?phone=5511948451643&text=Estou%20interessado%20em%20me%20inscrever%20na%20Maverick%20no%20plano%20${title}%20de%20R$${price}!`}
+      >
+        <button className="text-xs font-bold shadow-sm hover:shadow-lg hover:shadow-zinc-800 border border-zinc-600 shadow-zinc-600 opacity-80 hover:opacity-100 transition-all  w-full py-3 rounded-lg">
+          Inscreva-se agora
+        </button>
+      </a>
     </div>
   );
 };
