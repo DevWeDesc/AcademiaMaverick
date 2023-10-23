@@ -8,6 +8,7 @@ import "swiper/css/navigation";
 import "./styles.css";
 import ImageSwiper from "../../../public/Image.png";
 import Image from "next/image";
+import { comentsData } from "../../../data/data";
 
 export const SwiperAbout = () => {
   return (

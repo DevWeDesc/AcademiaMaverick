@@ -10,6 +10,8 @@ import Image from "next/image";
 import ImagePeople from "../../../public/Ellipse 2.png";
 import stars from "../../../public/Frame 13.png";
 import { ISwiperFeedbacks } from "../../../types/types";
+import { comentsData } from "../../../data/data";
+import { User2 } from "lucide-react";
 
 export const SwiperFeedbacks = ({ slidesPerView }: ISwiperFeedbacks) => {
   return (
@@ -20,66 +22,33 @@ export const SwiperFeedbacks = ({ slidesPerView }: ISwiperFeedbacks) => {
       modules={[Navigation]}
       className={`mySwiperFeedback`}
     >
-      <SwiperSlide>
-        <div className="w-full flex cursor-grab active:cursor-grabbing mt-10 flex-col gap-4 p-4 lg:px-5 lg:py-14 rounded-xl bg-[#181818]">
-          <div className="flex gap-6 m-0 items-center">
-            <Image
-              className="max-w-[56px] max-h-[56px] lg:max-w-[64px] lg:max-h-[64px]"
-              alt=""
-              src={ImagePeople}
-            />
-            <div className="flex flex-col gap-1">
-              <p className="font-bold lg:text-xl">Vinicius Henrique</p>
-              <Image alt="" src={stars} className="w-[86px]"></Image>
+      {comentsData.map((data, index) => (
+        <SwiperSlide key={index} className="cursor-grab active:cursor-grabbing">
+          <div className="w-full min-h-full flex cursor-grab active:cursor-grabbing mt-10 flex-col gap-4 p-4 lg:px-5 lg:py-14 rounded-xl bg-[#181818]">
+            <div className="flex gap-6 m-0 items-center">
+              {data.photo ? (
+                <Image
+                  className="max-w-[56px] max-h-[56px] lg:max-w-[64px] rounded-full lg:max-h-[64px]"
+                  alt=""
+                  src={data.photo}
+                />
+              ) : (
+                <User2
+                  strokeWidth={1}
+                  className="w-[50px] h-[50px] lg:w-[50px] rounded-full lg:h-[50px] bg-zinc-600 p-2"
+                />
+              )}
+              <div className="flex flex-col gap-1">
+                <p className="font-bold lg:text-xl">{data.name}</p>
+                <Image alt="" src={stars} className="w-[86px]"></Image>
+              </div>
             </div>
+            <p className="text-left text-[12px] font-medium lg:text-lg">
+              {data.content}
+            </p>
           </div>
-          <p className="text-left text-[12px] font-medium lg:text-lg">
-            Esta academia é simplesmente incrível! Desde o momento em que
-            entrei, fui recebido com uma equipe calorosa e amigável, além de
-            instrutores experientes e motivadores.
-          </p>
-        </div>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div className="w-full flex cursor-grab active:cursor-grabbing mt-10 flex-col gap-4 p-4 lg:px-5 lg:py-14 rounded-xl bg-[#181818]">
-          <div className="flex gap-6 m-0 items-center">
-            <Image
-              className="max-w-[56px] max-h-[56px] lg:max-w-[64px] lg:max-h-[64px]"
-              alt=""
-              src={ImagePeople}
-            />
-            <div className="flex flex-col gap-1">
-              <p className="font-bold lg:text-xl">Vinicius Henrique</p>
-              <Image alt="" src={stars} className="w-[86px]"></Image>
-            </div>
-          </div>
-          <p className="text-left text-[12px] font-medium lg:text-lg">
-            Esta academia é simplesmente incrível! Desde o momento em que
-            entrei, fui recebido com uma equipe calorosa e amigável, além de
-            instrutores experientes e motivadores.
-          </p>
-        </div>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div className="w-full flex cursor-grab active:cursor-grabbing  mt-10 flex-col gap-4 p-4 lg:px-5 lg:py-14 rounded-xl bg-[#181818]">
-          <div className="flex gap-6 m-0 items-center">
-            <Image
-              className="max-w-[56px] max-h-[56px] lg:max-w-[64px] lg:max-h-[64px]"
-              alt=""
-              src={ImagePeople}
-            />
-            <div className="flex flex-col gap-1">
-              <p className="font-bold lg:text-xl">Vinicius Henrique</p>
-              <Image alt="" src={stars} className="w-[86px]" />
-            </div>
-          </div>
-          <p className="text-left text-[12px] font-medium lg:text-lg">
-            Esta academia é simplesmente incrível! Desde o momento em que
-            entrei, fui recebido com uma equipe calorosa e amigável, além de
-            instrutores experientes e motivadores.
-          </p>
-        </div>
-      </SwiperSlide>
+        </SwiperSlide>
+      ))}
     </Swiper>
   );
 };

@@ -1,3 +1,5 @@
+import { StaticImport } from "next/dist/shared/lib/get-img-props";
+import { StaticImageData } from "next/image";
 import { ReactNode } from "react";
 
 export type IFeedbacks = {
@@ -39,4 +41,10 @@ export type IDataNav = {
 
 export type ISwiperFeedbacks = {
   slidesPerView: number;
+};
+
+export type IComents = {
+  photo?: string | StaticImport | StaticImageData | any;
+  name: string;
+  content: string;
 };
