@@ -1,6 +1,6 @@
 "use client";
 import { SwiperFeedbacks } from "./SwiperFeedbacks/Swiper";
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState } from "react";
 
 export const Feedbacks = () => {
   const [slidesPerView, setSlidesPerView] = useState(2);

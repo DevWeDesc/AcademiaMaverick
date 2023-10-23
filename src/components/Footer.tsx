@@ -23,12 +23,11 @@ export const Footer = () => {
       <div className="text-center items-center flex flex-col gap-5 lg:col-span-2">
         <h3 className="font-bold">Contatos</h3>
         <div className="flex items-center gap-2">
-          {" "}
           <Facebook
             size={30}
             className="hover:bg-blue-600 hover:p-1 rounded-md transition-all"
           />
-          <a href="https://www.instagram.com/maverickacademia/">
+          <a target="_blank" href="https://www.instagram.com/maverickacademia/">
             <Instagram
               size={30}
               className="hover:bg-gradient-to-r from-purple-500 to-pink-500 hover:p-1 rounded-md transition-all"
