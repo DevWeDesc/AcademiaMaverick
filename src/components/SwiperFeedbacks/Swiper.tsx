@@ -1,13 +1,10 @@
 "use client";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
-
 import "swiper/css";
 import "swiper/css/navigation";
 import "./style.css";
-import ImageSwiper from "../../../public/Image.png";
 import Image from "next/image";
-import ImagePeople from "../../../public/Ellipse 2.png";
 import stars from "../../../public/Frame 13.png";
 import { ISwiperFeedbacks } from "../../../types/types";
 import { comentsData } from "../../../data/data";

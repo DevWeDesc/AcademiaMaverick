@@ -7,20 +7,25 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "./styles.css";
 import ImageSwiper from "../../../public/Image.png";
+import ImageMaverick from "../../../public/MaverickImage.jpg";
 import Image from "next/image";
-import { comentsData } from "../../../data/data";
 
 export const SwiperAbout = () => {
   return (
-    <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
+    <Swiper
+      navigation={true}
+      modules={[Navigation]}
+      className="mySwiper rounded-xl"
+    >
       <SwiperSlide className="cursor-grab active:cursor-grabbing">
-        <Image alt="" src={ImageSwiper}></Image>
+        <Image alt="" src={ImageSwiper} />
       </SwiperSlide>
-      <SwiperSlide className="cursor-grab active:cursor-grabbing">
-        <Image alt="" src={ImageSwiper}></Image>
-      </SwiperSlide>
-      <SwiperSlide className="cursor-grab active:cursor-grabbing">
-        <Image alt="" src={ImageSwiper}></Image>
+      <SwiperSlide className="cursor-grab max-h-[208px] rounded-xl active:cursor-grabbing">
+        <Image
+          alt=""
+          className="rounded-sm object-contain"
+          src={ImageMaverick}
+        />
       </SwiperSlide>
     </Swiper>
   );
