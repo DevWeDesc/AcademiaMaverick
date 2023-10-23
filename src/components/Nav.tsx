@@ -41,7 +41,7 @@ export const Nav = ({ navOpen, HandleNavOpen }: INav) => {
           className={`flex items-center gap-2 py-2 font-semibold lg:pr-6 lg:py-1 ${
             navSelection === data.name
               ? "text-logoColor border-b border-logoColor"
-              : ""
+              : "text-white"
           }`}
           href={data.url}
           key={index}

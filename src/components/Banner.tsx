@@ -6,14 +6,14 @@ import ImageBannerDektop from "../../public/ImageBannerDektop.png";
 export const Banner = () => {
   return (
     <div>
-      <div className="pt-[80px] lg:w-[98vw] lg:pt-[130px] w-screen h-auto lg:flex lg:flex-row">
+      <div className="pt-[80px] lg:w-[98vw] lg:pt-[130px] w-screen h-auto lg:flex lg:flex-row bg-black">
         <Image className="w-full lg:hidden" alt="" src={ImageBannerMobile} />
         <Image
           className="hidden lg:relative lg:block w-full"
           alt=""
           src={ImageBannerDektop}
         />
-        <div className="relative bottom-10 flex flex-col items-center gap-1 p-5 lg:bottom-0 lg:justify-center lg:items-start lg:w-full lg:px-28">
+        <div className="relative bottom-10 flex flex-col items-center gap-1 p-5 bg-transparent text-white lg:bottom-0 lg:justify-center lg:items-start lg:w-full lg:px-28">
           <h2 className="text-2xl font-bold text-center max-w-[18rem] lg:text-5xl lg:text-left lg:min-w-full">
             Transforme seu Corpo e sua Vida!
           </h2>

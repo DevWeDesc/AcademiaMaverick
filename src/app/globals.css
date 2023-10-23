@@ -9,6 +9,18 @@
   --background-end-rgb: 255, 255, 255;
 }
 
+/* Cor de fundo da barra de rolagem */
+::-webkit-scrollbar {
+  width: 0.6vw;
+  background-color: #121212;
+}
+
+/* Cor da alça da barra de rolagem */
+::-webkit-scrollbar-thumb {
+  background-color: #4e4e4e;
+  border-radius: 6px;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
