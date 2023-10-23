@@ -12,13 +12,13 @@ import Image from "next/image";
 export const SwiperAbout = () => {
   return (
     <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
-      <SwiperSlide className="cursor-grab">
+      <SwiperSlide className="cursor-grab active:cursor-grabbing">
         <Image alt="" src={ImageSwiper}></Image>
       </SwiperSlide>
-      <SwiperSlide className="cursor-grab">
+      <SwiperSlide className="cursor-grab active:cursor-grabbing">
         <Image alt="" src={ImageSwiper}></Image>
       </SwiperSlide>
-      <SwiperSlide className="cursor-grab">
+      <SwiperSlide className="cursor-grab active:cursor-grabbing">
         <Image alt="" src={ImageSwiper}></Image>
       </SwiperSlide>
     </Swiper>

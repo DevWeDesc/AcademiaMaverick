@@ -21,7 +21,7 @@ export const SwiperFeedbacks = ({ slidesPerView }: ISwiperFeedbacks) => {
       className={`mySwiperFeedback`}
     >
       <SwiperSlide>
-        <div className="w-full flex cursor-grab mt-10 flex-col gap-4 p-4 lg:px-5 lg:py-14 rounded-xl bg-[#181818]">
+        <div className="w-full flex cursor-grab active:cursor-grabbing mt-10 flex-col gap-4 p-4 lg:px-5 lg:py-14 rounded-xl bg-[#181818]">
           <div className="flex gap-6 m-0 items-center">
             <Image
               className="max-w-[56px] max-h-[56px] lg:max-w-[64px] lg:max-h-[64px]"
@@ -41,7 +41,7 @@ export const SwiperFeedbacks = ({ slidesPerView }: ISwiperFeedbacks) => {
         </div>
       </SwiperSlide>
       <SwiperSlide>
-        <div className="w-full flex cursor-grab mt-10 flex-col gap-4 p-4 lg:px-5 lg:py-14 rounded-xl bg-[#181818]">
+        <div className="w-full flex cursor-grab active:cursor-grabbing mt-10 flex-col gap-4 p-4 lg:px-5 lg:py-14 rounded-xl bg-[#181818]">
           <div className="flex gap-6 m-0 items-center">
             <Image
               className="max-w-[56px] max-h-[56px] lg:max-w-[64px] lg:max-h-[64px]"
@@ -61,7 +61,7 @@ export const SwiperFeedbacks = ({ slidesPerView }: ISwiperFeedbacks) => {
         </div>
       </SwiperSlide>
       <SwiperSlide>
-        <div className="w-full flex cursor-grab mt-10 flex-col gap-4 p-4 lg:px-5 lg:py-14 rounded-xl bg-[#181818]">
+        <div className="w-full flex cursor-grab active:cursor-grabbing  mt-10 flex-col gap-4 p-4 lg:px-5 lg:py-14 rounded-xl bg-[#181818]">
           <div className="flex gap-6 m-0 items-center">
             <Image
               className="max-w-[56px] max-h-[56px] lg:max-w-[64px] lg:max-h-[64px]"
