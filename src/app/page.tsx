@@ -4,6 +4,7 @@ import { Header } from "@/components/Header";
 import { Feedbacks } from "@/components/Feedbacks";
 import { Plans } from "@/components/Plans";
 import { Footer } from "@/components/Footer";
+import { Activities } from "@/components/Activies/Activities";
 
 export default function Home() {
   return (
@@ -16,11 +17,14 @@ export default function Home() {
         <section id="about">
           <About />
         </section>
-        <section id="feedbacks">
-          <Feedbacks />
+        <section id="activies">
+          <Activities />
         </section>
         <section id="plans">
           <Plans />
+        </section>
+        <section id="feedbacks">
+          <Feedbacks />
         </section>
       </main>
       <Footer />
