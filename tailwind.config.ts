@@ -1,3 +1,4 @@
+import { px } from "framer-motion";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -17,6 +18,9 @@ const config: Config = {
             light: "#FFF", // Substitua pela cor de texto desejada
           },
         },
+      },
+      boxShadow: {
+        card: "0px 0px 60px -10px rgba(0 0 0 / 0.05)",
       },
 
       backgroundImage: {
