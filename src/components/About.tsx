@@ -19,7 +19,6 @@ export const About = () => {
           atingir seus objetivos de bem-estar
         </p>
         <a
-          about="Link para dicionamento a sessão de Planos"
           aria-label="Link para dicionamento a sessão de Planos"
           href="#plans"
           className="text-white flex flex-row gap-2 font-semibold items-center hover:gap-4 transition-all text-[14px] mb-7 lg:py-2 lg:text-xl opacity-90 hover:opacity-100"

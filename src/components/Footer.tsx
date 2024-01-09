@@ -9,7 +9,7 @@ import { BsWhatsapp } from "react-icons/bs";
 export const Footer = () => {
   return (
     <div className="bg-black text-white flex flex-col items-center py-8 gap-10 border-t-[2px] border-[#222222] lg:flex-row lg:justify-between lg:px-36">
-      <Image alt="" className="object-contain" src={Logo} />
+      <Image alt="Logo da empresa" className="object-contain" src={Logo} />
       <div className="flex flex-col items-center gap-8">
         <div className="flex flex-col gap-5 items-center">
           <h3 className="font-semibold">Horarios de Funcionamento</h3>
@@ -26,7 +26,6 @@ export const Footer = () => {
         <div className="flex items-center gap-2">
           <a
             aria-label="Link de direionamento para o WhatsApp"
-            about="Link de direionamento para o WhatsApp"
             target="_blank"
             href="https://api.whatsapp.com/send?phone=5511948451643&text=Estou%20interessado%20em%20me%20inscrever%20na%20Maverick!"
           >
@@ -37,7 +36,6 @@ export const Footer = () => {
           </a>
           <a
             aria-label="Link de direionamento para o Instagram"
-            about="Link de direionamento para o Instagram"
             target="_blank"
             href="https://www.instagram.com/maverickacademia/"
           >

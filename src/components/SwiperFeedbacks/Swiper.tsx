@@ -26,7 +26,7 @@ export const SwiperFeedbacks = ({ slidesPerView }: ISwiperFeedbacks) => {
               {data.photo ? (
                 <Image
                   className="max-w-[56px] max-h-[56px] lg:max-w-[64px] rounded-full lg:max-h-[64px]"
-                  alt=""
+                  alt={`Imagem do Usuário ${data.name}`}
                   src={data.photo}
                 />
               ) : (
@@ -37,7 +37,11 @@ export const SwiperFeedbacks = ({ slidesPerView }: ISwiperFeedbacks) => {
               )}
               <div className="flex flex-col gap-1">
                 <p className="font-bold lg:text-xl">{data.name}</p>
-                <Image alt="" src={stars} className="w-[86px]"></Image>
+                <Image
+                  alt="Quantidade de estrelas do feedback"
+                  src={stars}
+                  className="w-[86px]"
+                />
               </div>
             </div>
             <p className="text-left text-[12px] font-medium lg:text-lg">

@@ -8,10 +8,14 @@ export const Banner = () => {
     <div className="flex items-center justify-center min-h-[616px] lg:pt-[117px]">
       <div className="pt-[80px] w-screen lg:w-[98vw] h-auto lg:grid lg:grid-cols-2 bg-black">
         <div className="lg:min-h-[463px]">
-          <Image className="w-full lg:hidden" alt="" src={ImageBannerMobile} />
+          <Image
+            className="w-full lg:hidden"
+            alt="Imagem do banner"
+            src={ImageBannerMobile}
+          />
           <Image
             className="hidden lg:absolute lg:left-0 lg:block w-[616px]"
-            alt=""
+            alt="Imagem do banner"
             src={ImageBannerDektop}
           />
         </div>
@@ -24,7 +28,6 @@ export const Banner = () => {
             Premium!
           </p>
           <a
-            about="Link para dicionamento a sessão de Nossa História"
             aria-label="Link para dicionamento a sessão de Nossa História"
             href="#about"
             className="w-full"
