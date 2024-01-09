@@ -3,7 +3,7 @@ import { GridActivies } from "./GridActivies";
 
 export const Activities = () => {
   return (
-    <div className="hidden lg:flex text-center flex-col items-center gap-12 lg:py-20 lg:px-36 bg-black">
+    <div className="hidden lg:flex text-center flex-col items-center gap-12 lg:py-20 lg:px-36 bg-black max-w-[1700px] m-auto 4xl:px-0">
       <div className="space-y-1">
         <div className="py-9 space-y-6">
           <h2 className="font-bold text-2xl lg:text-5xl">Nossas Atividades</h2>

@@ -12,33 +12,35 @@ export const Header = () => {
   };
 
   return (
-    <div className="fixed w-full z-10 top-0 bg-black pl-3 pr-5 flex items-center justify-between lg:px-20 lg:py-1 lg:border-b-[1px] lg:border-[#222222]">
-      <Image alt="Logo da empresa" className="w-20" src={Logo} />
-      <div
-        onClick={handleOpenHamburguer}
-        className="w-10 h-10 p-2 flex flex-col cursor-pointer hover:bg-zinc-700  rounded-full justify-center gap-[6px] opacity-60 lg:hidden"
-      >
+    <div className="fixed w-full z-10 top-0 bg-black lg:border-b-[1px] lg:border-[#222222]">
+      <div className="pl-3 pr-5 flex items-center justify-between lg:px-20 lg:py-1 max-w-[1700px] m-auto 4xl:px-0">
+        <Image alt="Logo da empresa" className="w-20" src={Logo} />
         <div
-          className={`${
-            openHamburguer
-              ? "relative top-1 transition-all rotate-45"
-              : "transition-all"
-          }`}
+          onClick={handleOpenHamburguer}
+          className="w-10 h-10 p-2 flex flex-col cursor-pointer hover:bg-zinc-700  rounded-full justify-center gap-[6px] opacity-60 lg:hidden"
         >
-          <HamburguerStyle />
+          <div
+            className={`${
+              openHamburguer
+                ? "relative top-1 transition-all rotate-45"
+                : "transition-all"
+            }`}
+          >
+            <HamburguerStyle />
+          </div>
+          {!openHamburguer && <HamburguerStyle />}
+          <div
+            className={`${
+              openHamburguer
+                ? "relative bottom-1 transition-all rotate-[-45deg]"
+                : "transition-all"
+            }`}
+          >
+            <HamburguerStyle />
+          </div>
         </div>
-        {!openHamburguer && <HamburguerStyle />}
-        <div
-          className={`${
-            openHamburguer
-              ? "relative bottom-1 transition-all rotate-[-45deg]"
-              : "transition-all"
-          }`}
-        >
-          <HamburguerStyle />
-        </div>
+        <Nav HandleNavOpen={handleOpenHamburguer} navOpen={openHamburguer} />
       </div>
-      <Nav HandleNavOpen={handleOpenHamburguer} navOpen={openHamburguer} />
     </div>
   );
 };
