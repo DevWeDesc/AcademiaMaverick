@@ -8,7 +8,7 @@ export const Plans = () => {
       <p className="text-logoColorLight font-semibold md:col-span-2 lg:col-span-4 lg:text-center lg:text-2xl">
         Nossos Planos Acessíveis e Flexíveis
       </p>
-      <div className="flex flex-col items-center mb-3 gap-2 md:col-span-2 lg:col-span-4 ">
+      <div className="flex flex-col items-center gap-2 md:col-span-2 lg:col-span-4 mb-12">
         <h2 className="text-2xl text-center font-bold lg:text-5xl">
           Escolha o Plano Perfeito para Você
         </h2>
