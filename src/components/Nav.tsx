@@ -7,21 +7,33 @@ import {
   MessagesSquare,
   Home,
   CircleDollarSign,
+  Dumbbell,
 } from "lucide-react";
 
 export const Nav = ({ navOpen, HandleNavOpen }: INav) => {
   const [navSelection, setNavSelection] = useState("Inicio");
 
   const IconsNav = ({ name }: IDataNav): React.JSX.Element => {
-    if (name === "Inicio") {
-      return <Home />;
-    } else if (name === "Sobre Nós") {
-      return <BookMarked />;
-    } else if (name === "Feedbacks") {
-      return <MessagesSquare />;
-    } else {
-      return <CircleDollarSign />;
+    let component: React.JSX.Element = <></>;
+
+    switch (name) {
+      case "Inicio":
+        component = <Home />;
+        break;
+      case "Sobre Nós":
+        component = <BookMarked />;
+        break;
+      case "Feedbacks":
+        component = <MessagesSquare />;
+        break;
+      case "Planos":
+        component = <CircleDollarSign />;
+        break;
+      default:
+        component = <Dumbbell />;
+        break;
     }
+    return component;
   };
 
   return (
