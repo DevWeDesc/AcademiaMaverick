@@ -8,6 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Academia Maverick",
   description: "Academia Maverick",
+  verification: { google: "lHi74h9ib--2z_24ahizget1uL6kIkM6Igwj6gtFhqE" },
 };
 
 export default function RootLayout({
