@@ -1,5 +1,4 @@
 "use client";
-import React, { useEffect } from "react";
 import { SwiperAbout } from "./SwiperAbout/SwiperAbout";
 import { ChevronRight } from "lucide-react";
 
