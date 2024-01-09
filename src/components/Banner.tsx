@@ -1,21 +1,23 @@
 "use client";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import ImageBannerMobile from "../../public/ImageBannerMobile.png";
 import ImageBannerDektop from "../../public/ImageBannerDektop.png";
+import { ChevronRight } from "lucide-react";
 
 export const Banner = () => {
+  const [transitionButton, setTransitionButton] = useState(false);
   return (
-    <div className="flex items-center justify-center min-h-[616px] lg:pt-[117px]">
-      <div className="pt-[80px] w-screen lg:w-[98vw] h-auto lg:grid lg:grid-cols-2 bg-black">
-        <div className="lg:min-h-[463px]">
+    <div className="flex items-center justify-center min-h-[616px] lg:pt-[117px] max-w-[1700px] m-auto">
+      <div className="pt-[80px] w-screen lg:w-[98vw] h-auto lg:grid lg:grid-cols-2 bg-black ">
+        <div className="lg:min-h-[463px] relative">
           <Image
             className="w-full lg:hidden"
             alt="Imagem do banner"
             src={ImageBannerMobile}
           />
           <Image
-            className="hidden lg:absolute lg:left-0 lg:block w-[616px]"
+            className="hidden lg:absolute lg:block h-full w-auto"
             alt="Imagem do banner"
             src={ImageBannerDektop}
           />
@@ -33,9 +35,22 @@ export const Banner = () => {
             href="#about"
             className="w-full"
           >
-            <button className="bg-[#252525] font-bold py-4 mt-8 w-full rounded-lg hover:opacity-90 transition-all">
-              Iniciar
+            <button
+              onMouseEnter={() => setTransitionButton(true)}
+              onMouseLeave={() => setTransitionButton(false)}
+              className="flex flex-row gap-2 font-semibold items-center justify-center hover:gap-4 transition-all py-6 mt-8 w-full rounded-lg hover:opacity-90"
+            >
+              <span className="text-lg">
+                {" "}
+                Quero Saber mais sobre a Academia Maverick
+              </span>
+              <ChevronRight />
             </button>
+            <div
+              className={`h border border-logoColor m-auto transition-all ${
+                !transitionButton ? "w-10" : "w-5/6"
+              }`}
+            />
           </a>
         </div>
       </div>
