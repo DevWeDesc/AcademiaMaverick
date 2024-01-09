@@ -34,6 +34,8 @@ export const Nav = ({ navOpen, HandleNavOpen }: INav) => {
     >
       {DataNav.map((data, index) => (
         <a
+          about={`Link para a sessão ${data.name}`}
+          aria-label={`Link para a sessão ${data.name}`}
           onClick={() => {
             setNavSelection(data.name);
             HandleNavOpen();

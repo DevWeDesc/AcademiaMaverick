@@ -25,6 +25,8 @@ export const Footer = () => {
         <h3 className="font-bold">Contatos</h3>
         <div className="flex items-center gap-2">
           <a
+            aria-label="Link de direionamento para o WhatsApp"
+            about="Link de direionamento para o WhatsApp"
             target="_blank"
             href="https://api.whatsapp.com/send?phone=5511948451643&text=Estou%20interessado%20em%20me%20inscrever%20na%20Maverick!"
           >
@@ -33,7 +35,12 @@ export const Footer = () => {
               className="hover:text-green-600 hover:p-1 rounded-full transition-all"
             />
           </a>
-          <a target="_blank" href="https://www.instagram.com/maverickacademia/">
+          <a
+            aria-label="Link de direionamento para o Instagram"
+            about="Link de direionamento para o Instagram"
+            target="_blank"
+            href="https://www.instagram.com/maverickacademia/"
+          >
             <Instagram
               size={30}
               className="hover:bg-gradient-to-r from-purple-500 to-pink-500 hover:p-1 rounded-md transition-all"
