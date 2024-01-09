@@ -12,7 +12,7 @@ export const Plans = () => {
         <h2 className="text-2xl text-center font-bold lg:text-5xl">
           Escolha o Plano Perfeito para Você
         </h2>
-        <div className="h-[2px] rounded-full w-16 bg-logoColorLight lg:w-28 lg:mt-2" />
+        <div className="h-[2px] rounded-full w-16 bg-logoColorLight lg:w-28 mt-1" />
       </div>
       {DataPlans.map((data) => (
         <CardPlans

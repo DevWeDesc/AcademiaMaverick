@@ -40,7 +40,7 @@ export const Banner = () => {
               onMouseLeave={() => setTransitionButton(false)}
               className="flex flex-row gap-2 font-semibold items-center justify-center hover:gap-4 transition-all py-6 mt-8 w-full rounded-lg hover:opacity-90"
             >
-              <span className="text-lg">
+              <span className="text-sm lg:text-lg">
                 {" "}
                 Quero Saber mais sobre a Academia Maverick
               </span>
@@ -48,7 +48,7 @@ export const Banner = () => {
             </button>
             <div
               className={`h border border-logoColor m-auto transition-all ${
-                !transitionButton ? "w-10" : "w-5/6"
+                !transitionButton ? "w-10" : "w-full lg:w-[90%]"
               }`}
             />
           </a>

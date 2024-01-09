@@ -12,7 +12,7 @@ import ImageHiit from "../../../public/hiit.jpg";
 
 export const GridActivies = () => {
   return (
-    <div className="grid grid-cols-4 grid-rows-2 h-auto gap-6 text-left">
+    <div className="grid grid-cols-2 lg:grid-cols-4 grid-rows-2 h-auto lg:gap-6 gap-2 text-left">
       <div className="relative col-span-2 w-full">
         <Image
           className="h-full absolute object-cover opacity-20 rounded-lg bg-[rgb(0,0,0,0.2)]"
@@ -21,8 +21,10 @@ export const GridActivies = () => {
           objectPosition="center"
         />
         <div className="text-white space-y-4 py-8 px-5">
-          <p className="">Cross Fight - Horário de Atividade</p>
-          <div className="font-extralight text-sm opacity-90 flex flex-col gap-3">
+          <p className="text-sm lg:text-base">
+            Cross Fight - Horário de Atividade
+          </p>
+          <div className="font-extralight text-[10px] lg:text-sm opacity-90 flex flex-col gap-3">
             <p>
               <strong>Segunda-feira:</strong>
               <br />
@@ -47,8 +49,10 @@ export const GridActivies = () => {
           objectPosition="center"
         />
         <div className=" text-white space-y-4 py-8 px-5">
-          <p className="">Abdominal + Alongamento - Horário de Atividade</p>
-          <div className="font-extralight text-sm opacity-90 flex flex-col gap-3">
+          <p className="text-sm lg:text-base">
+            Abdominal + Alongamento - Horário de Atividade
+          </p>
+          <div className="font-extralight text-[10px] lg:text-sm opacity-90 flex flex-col gap-3">
             <p>
               <strong>Segunda-feira:</strong>
               <br />
@@ -75,8 +79,8 @@ export const GridActivies = () => {
           objectPosition="center"
         />
         <div className="text-white space-y-4 py-8 px-5">
-          <p className="">Step - Horário de Atividade</p>
-          <div className="font-extralight text-sm opacity-90 flex flex-col gap-3">
+          <p className="text-sm lg:text-base">Step - Horário de Atividade</p>
+          <div className="font-extralight text-[10px] lg:text-sm opacity-90 flex flex-col gap-3">
             <p>
               <strong>Segunda-feira:</strong>
               <br />
@@ -98,8 +102,8 @@ export const GridActivies = () => {
           objectPosition="center"
         />
         <div className="text-white space-y-4 py-8 px-5">
-          <p className="">Pilates - Horário de Atividade</p>
-          <div className="font-extralight text-sm opacity-90 flex flex-col gap-3">
+          <p className="text-sm lg:text-base">Pilates - Horário de Atividade</p>
+          <div className="font-extralight text-[10px] lg:text-sm opacity-90 flex flex-col gap-3">
             <p>
               <strong>Segunda-feira:</strong>
               <br />
@@ -116,8 +120,10 @@ export const GridActivies = () => {
           objectPosition="center"
         />
         <div className="text-white space-y-4 py-8 px-5">
-          <p className="">Cross Kids - Horário de Atividade</p>
-          <div className="font-extralight text-sm opacity-90 flex flex-col gap-3">
+          <p className="text-sm lg:text-base">
+            Cross Kids - Horário de Atividade
+          </p>
+          <div className="font-extralight text-[10px] lg:text-sm opacity-90 flex flex-col gap-3">
             <p>
               <strong>Terça-feira e Quinta-feira:</strong>
               <br />
@@ -134,8 +140,10 @@ export const GridActivies = () => {
           objectPosition="center"
         />
         <div className="text-white space-y-4 py-8 px-5">
-          <p className="">FitDance - Horário de Atividade</p>
-          <div className="font-extralight text-sm opacity-90 flex flex-col gap-3">
+          <p className="text-sm lg:text-base">
+            FitDance - Horário de Atividade
+          </p>
+          <div className="font-extralight text-[10px] lg:text-sm opacity-90 flex flex-col gap-3">
             <p>
               <strong>Segunda-feira:</strong>
               <br />
@@ -167,8 +175,10 @@ export const GridActivies = () => {
         />
         {/* 4 Gap, Hit 2, crosstrauining6  */}
         <div className="text-white space-y-4 py-8 px-5">
-          <p className="">Cross Training - Horário de Atividade</p>
-          <div className="font-extralight text-sm opacity-90 flex flex-col gap-3">
+          <p className="text-sm lg:text-base">
+            Cross Training - Horário de Atividade
+          </p>
+          <div className="font-extralight text-[10px] lg:text-sm opacity-90 flex flex-col gap-3">
             <p>
               <strong>Terça-feira:</strong>
               <br />
@@ -201,8 +211,8 @@ export const GridActivies = () => {
           objectPosition="center"
         />
         <div className="text-white space-y-4 py-8 px-5">
-          <p className="">Gap - Horário de Atividade</p>
-          <div className="font-extralight text-sm opacity-90 flex flex-col gap-3">
+          <p className="text-sm lg:text-base">Gap - Horário de Atividade</p>
+          <div className="font-extralight text-[10px] lg:text-sm opacity-90 flex flex-col gap-3">
             <p>
               <strong>Terça-feira e Quinta-feira:</strong>
               <br />
@@ -229,8 +239,8 @@ export const GridActivies = () => {
           objectPosition="center"
         />
         <div className="text-white space-y-4 py-8 px-5">
-          <p className="">Hiit - Horário de Atividade</p>
-          <div className="font-extralight text-sm opacity-90 flex flex-col gap-3">
+          <p className="text-sm lg:text-base">Hiit - Horário de Atividade</p>
+          <div className="font-extralight text-[10px] lg:text-sm opacity-90 flex flex-col gap-3">
             <p>
               <strong>Terça-feira e Quinta-feira:</strong>
               <br />
