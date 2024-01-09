@@ -8,7 +8,7 @@ export const CardPlans = ({ title, price, benefits }: ICardPlans) => {
   let totalInFront: string = totalPrice.toFixed(2).replace(".", ",");
 
   return (
-    <div className="px-5 py-8 border border-logoColor rounded-lg flex flex-col items-center">
+    <div className="px-5 py-8 border border-logoColor rounded-lg flex flex-col items-center hover:shadow-card hover:shadow-logoColorLight transition-all">
       <p className="font-bold mb-7">{title}</p>
       <div className="flex items-center gap-2 mb-5">
         <div className="flex items-center gap-2">
@@ -27,6 +27,9 @@ export const CardPlans = ({ title, price, benefits }: ICardPlans) => {
           </p>
         </div>
       </div>
+      <p className="font-normal text-[11px] mb-3">
+        Pagamento por Débito, Crédito à Vista, Dinheiro e Pix
+      </p>
       <div className="flex gap-3 flex-col mb-9">
         {benefits.map((data, index) => (
           <div key={index} className="flex items-center gap-2">
