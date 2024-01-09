@@ -32,6 +32,9 @@ const config: Config = {
         logoColor: "#D6927B",
         logoColorLight: "#E8A58F",
       },
+      screens: {
+        "4xl": "1700px",
+      },
     },
   },
   plugins: [],
