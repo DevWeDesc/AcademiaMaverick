@@ -26,8 +26,10 @@ export default function Home() {
         <section id="feedbacks">
           <Feedbacks />
         </section>
+        <section id="workwithus">
+          <Footer />
+        </section>
       </main>
-      <Footer />
     </div>
   );
 }

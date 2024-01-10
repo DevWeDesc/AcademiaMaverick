@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import Logo from "../../public/LogoFooter.png";
 import { schedulesData } from "../../data/data";
-import { Phone, MapPin, Facebook, Instagram } from "lucide-react";
+import { Phone, MapPin, Facebook, Instagram, Mail } from "lucide-react";
 import { IContactsDefault } from "../../types/types";
 import { BsWhatsapp } from "react-icons/bs";
 
@@ -55,6 +55,29 @@ export const Footer = () => {
             Rua Pedro de Tolêdo, 296 Mauá, São Paulo
           </p>
         </ContactsDefault>
+        <h3 className="font-bold">Trabalhe Conosco</h3>
+        <div className="flex items-center gap-2">
+          <a
+            aria-label="Link de direionamento para o WhatsApp"
+            target="_blank"
+            href="mailto:emaildaempresa@gmail.com"
+          >
+            <Mail
+              size={30}
+              className="hover:text-red-600 hover:p-1 rounded-full transition-all"
+            />
+          </a>
+          <a
+            aria-label="Link de direionamento para o WhatsApp"
+            target="_blank"
+            href="https://api.whatsapp.com/send?phone=5511948451643&text=Estou%20interessado%20em%20trabalhar%20na%20Maverick.%20Quais%20vagas%20estão%20disponíveis?"
+          >
+            <BsWhatsapp
+              size={30}
+              className="hover:text-green-600 hover:p-1 rounded-full transition-all"
+            />
+          </a>
+        </div>
       </div>
     </div>
   );

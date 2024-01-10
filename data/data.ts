@@ -5,7 +5,9 @@ export const DataNav: IDataNav[] = [
   { name: "Sobre Nós", url: "#about" },
   { name: "Atividades", url: "#activies" },
   { name: "Planos", url: "#plans" },
+
   { name: "Feedbacks", url: "#feedbacks" },
+  { name: "Trabalhe Conosco", url: "#workwithus" },
 ];
 
 export const DataPlans: ICardPlans[] = [
