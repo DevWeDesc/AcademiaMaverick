@@ -1,5 +1,5 @@
 import React from "react";
-import { ICardPlans } from "../../types/types";
+import { ICardPlans } from "../../@types/types";
 import { CheckCircle } from "lucide-react";
 
 export const CardPlans = ({ title, price, benefits }: ICardPlans) => {

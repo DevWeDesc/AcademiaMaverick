@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { IDataNav, INav } from "../../types/types";
+import { IDataNav, INav } from "../../@types/types";
 import { DataNav } from "../../data/data";
 import {
   BookMarked,

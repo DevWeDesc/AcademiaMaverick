@@ -1,15 +1,15 @@
 import Image from "next/image";
 import React from "react";
-import Logo from "../../public/LogoFooter.png";
+import Logo from "../../public/LogoHeader.jpg";
 import { schedulesData } from "../../data/data";
-import { Phone, MapPin, Facebook, Instagram, Mail } from "lucide-react";
-import { IContactsDefault } from "../../types/types";
+import { Phone, MapPin, Instagram, Mail } from "lucide-react";
+import { IContactsDefault } from "../../@types/types";
 import { BsWhatsapp } from "react-icons/bs";
 
 export const Footer = () => {
   return (
     <div className="bg-black text-white flex flex-col items-center py-8 gap-10 border-t-[2px] border-[#222222] lg:flex-row lg:justify-between lg:px-36 4xl:px-96">
-      <Image alt="Logo da empresa" className="object-contain" src={Logo} />
+      <Image alt="Logo da empresa" className="object-contain w-40" src={Logo} />
       <div className="flex flex-col items-center gap-8">
         <div className="flex flex-col gap-5 items-center">
           <h3 className="font-semibold">Horarios de Funcionamento</h3>
@@ -60,7 +60,7 @@ export const Footer = () => {
           <a
             aria-label="Link de direionamento para o WhatsApp"
             target="_blank"
-            href="mailto:emaildaempresa@gmail.com"
+            href="mailto:contato@maverickacademia.com.br"
           >
             <Mail
               size={30}
