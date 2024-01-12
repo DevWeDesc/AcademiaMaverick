@@ -1,13 +1,234 @@
-import { ICardPlans, IComents, IDataNav, Ischedules } from "../types/types";
+import {
+  IActivies,
+  ICardPlans,
+  IComents,
+  IDataNav,
+  Ischedules,
+} from "../@types/types";
 import PhotoPrimaryComent from "../public/ImageWesley.jpeg";
+import image00001 from "../public/imagesMaverick/image00001.jpeg";
+import image00002 from "../public/imagesMaverick/image00002.jpeg";
+import image00003 from "../public/imagesMaverick/image00003.jpeg";
+import image00004 from "../public/imagesMaverick/image00004.jpeg";
+import image00005 from "../public/imagesMaverick/image00005.jpeg";
+import image00006 from "../public/imagesMaverick/image00006.jpeg";
+import image00007 from "../public/imagesMaverick/image00007.jpeg";
+import image00008 from "../public/imagesMaverick/image00008.jpeg";
+import image00009 from "../public/imagesMaverick/image00009.jpeg";
+import image00010 from "../public/imagesMaverick/image00010.jpeg";
+import image00011 from "../public/imagesMaverick/image00011.jpeg";
+import image00012 from "../public/imagesMaverick/image00012.jpeg";
+import image00013 from "../public/imagesMaverick/image00013.jpeg";
+import image00014 from "../public/imagesMaverick/image00014.jpeg";
+import image00015 from "../public/imagesMaverick/image00015.jpeg";
+import image00016 from "../public/imagesMaverick/image00016.jpeg";
+import image00017 from "../public/imagesMaverick/image00017.jpeg";
+import image00018 from "../public/imagesMaverick/image00018.jpeg";
+import image00019 from "../public/imagesMaverick/image00019.jpeg";
+import image00020 from "../public/imagesMaverick/image00020.jpeg";
+import image00021 from "../public/imagesMaverick/image00021.jpeg";
+import image00022 from "../public/imagesMaverick/image00022.jpeg";
+import image00023 from "../public/imagesMaverick/image00023.jpeg";
+import image00024 from "../public/imagesMaverick/image00024.jpeg";
+import image00025 from "../public/imagesMaverick/image00025.jpeg";
+import image00026 from "../public/imagesMaverick/image00026.jpeg";
+import image00027 from "../public/imagesMaverick/image00027.jpeg";
+import image00028 from "../public/imagesMaverick/image00028.jpeg";
+import image00029 from "../public/imagesMaverick/image00029.jpeg";
+import image00030 from "../public/imagesMaverick/image00030.jpeg";
+import image00031 from "../public/imagesMaverick/image00031.jpeg";
+import image00032 from "../public/imagesMaverick/image00032.jpeg";
+import image00034 from "../public/imagesMaverick/image00034.jpeg";
+import image00035 from "../public/imagesMaverick/image00035.jpeg";
+import image00036 from "../public/imagesMaverick/image00036.jpeg";
+import image00037 from "../public/imagesMaverick/image00037.jpeg";
+import image00038 from "../public/imagesMaverick/image00038.jpeg";
+import image00039 from "../public/imagesMaverick/image00039.jpeg";
+import image00040 from "../public/imagesMaverick/image00040.jpeg";
+import image00041 from "../public/imagesMaverick/image00041.jpeg";
+import image00042 from "../public/imagesMaverick/image00042.jpeg";
+import image00043 from "../public/imagesMaverick/image00043.jpeg";
+import image00044 from "../public/imagesMaverick/image00044.jpeg";
+import image00045 from "../public/imagesMaverick/image00045.jpeg";
+import image00046 from "../public/imagesMaverick/image00046.jpeg";
+import image00047 from "../public/imagesMaverick/image00047.jpeg";
+import image00048 from "../public/imagesMaverick/image00048.jpeg";
+import image00049 from "../public/imagesMaverick/image00049.jpeg";
+import image00050 from "../public/imagesMaverick/image00050.jpeg";
+import image00051 from "../public/imagesMaverick/image00051.jpeg";
+import image00052 from "../public/imagesMaverick/image00052.jpeg";
+import image00053 from "../public/imagesMaverick/image00053.jpeg";
+import image00054 from "../public/imagesMaverick/image00054.jpeg";
+import image00055 from "../public/imagesMaverick/image00055.jpeg";
+import image00056 from "../public/imagesMaverick/image00056.jpeg";
+import image00057 from "../public/imagesMaverick/image00057.jpeg";
+import image00058 from "../public/imagesMaverick/image00058.jpeg";
+import image00059 from "../public/imagesMaverick/image00059.jpeg";
+import image00060 from "../public/imagesMaverick/image00060.jpeg";
+import image00061 from "../public/imagesMaverick/image00061.jpeg";
+import image00062 from "../public/imagesMaverick/image00062.jpeg";
+import image00063 from "../public/imagesMaverick/image00063.jpeg";
+import image00064 from "../public/imagesMaverick/image00064.jpeg";
+import image00065 from "../public/imagesMaverick/image00065.jpeg";
+import image00066 from "../public/imagesMaverick/image00066.jpeg";
+import image00067 from "../public/imagesMaverick/image00067.jpeg";
+import image00068 from "../public/imagesMaverick/image00068.jpeg";
+import image00069 from "../public/imagesMaverick/image00069.jpeg";
+import image00070 from "../public/imagesMaverick/image00070.jpeg";
+import image00071 from "../public/imagesMaverick/image00071.jpeg";
+import image00072 from "../public/imagesMaverick/image00072.jpeg";
+import image00073 from "../public/imagesMaverick/image00073.jpeg";
+import image00074 from "../public/imagesMaverick/image00074.jpeg";
+import image00075 from "../public/imagesMaverick/image00075.jpeg";
+import image00076 from "../public/imagesMaverick/image00076.jpeg";
+import image00077 from "../public/imagesMaverick/image00077.jpeg";
+import image00078 from "../public/imagesMaverick/image00078.jpeg";
+import image00079 from "../public/imagesMaverick/image00079.jpeg";
+import image00080 from "../public/imagesMaverick/image00080.jpeg";
+import image00081 from "../public/imagesMaverick/image00081.jpeg";
+import image00082 from "../public/imagesMaverick/image00082.jpeg";
+import image00083 from "../public/imagesMaverick/image00083.jpeg";
+import image00084 from "../public/imagesMaverick/image00084.jpeg";
+import image00085 from "../public/imagesMaverick/image00085.jpeg";
+import image00086 from "../public/imagesMaverick/image00086.jpeg";
+import image00087 from "../public/imagesMaverick/image00087.jpeg";
+import image00088 from "../public/imagesMaverick/image00088.jpeg";
+import image00089 from "../public/imagesMaverick/image00089.jpeg";
+import image00090 from "../public/imagesMaverick/image00090.jpeg";
+import image00091 from "../public/imagesMaverick/image00091.jpeg";
+import image00092 from "../public/imagesMaverick/image00092.jpeg";
+import image00094 from "../public/imagesMaverick/image00094.jpeg";
+import image00095 from "../public/imagesMaverick/image00095.jpeg";
+import image00096 from "../public/imagesMaverick/image00096.jpeg";
+import image00097 from "../public/imagesMaverick/image00097.jpeg";
+import image00098 from "../public/imagesMaverick/image00098.jpeg";
+
 export const DataNav: IDataNav[] = [
   { name: "Inicio", url: "#init" },
   { name: "Sobre Nós", url: "#about" },
   { name: "Atividades", url: "#activies" },
   { name: "Planos", url: "#plans" },
-
   { name: "Feedbacks", url: "#feedbacks" },
-  { name: "Trabalhe Conosco", url: "#workwithus" },
+  // { name: "Trabalhe Conosco", url: "#workwithus" },
+];
+
+export const imagesAbout = [
+  { image: image00001 },
+  { image: image00002 },
+  { image: image00003 },
+  { image: image00004 },
+  { image: image00005 },
+  { image: image00006 },
+  { image: image00007 },
+];
+
+export const ActiviesData: IActivies[] = [
+  {
+    dayWeek: "Segunda-Feira",
+    activies: [
+      { hour: "06h às 07h", name: "Pilates" },
+      { hour: "07h às 08h", name: "Cross Fight" },
+      { hour: "08h às 09h", name: "Fit Dance" },
+      { hour: "18h às 19h", name: "Step" },
+      { hour: "19h às 20h", name: "Fit Dance" },
+      { hour: "20h às 21h", name: "Abdominal + Alongamento" },
+    ],
+  },
+  {
+    dayWeek: "Terça-Feira",
+    activies: [
+      { hour: "06h às 07h", name: "Gap" },
+      { hour: "07h às 08h", name: "Hit" },
+      { hour: "08h às 09h", name: "Abdominal + Alongamento" },
+      { hour: "18h às 19h", name: "Cross Kids" },
+      { hour: "19h às 20h", name: "Cross Training" },
+      { hour: "20h às 21h", name: "Cross Fight" },
+    ],
+  },
+  {
+    dayWeek: "Quarta-Feira",
+    activies: [
+      { hour: "06h às 07h", name: "Abdominal + Alongamento" },
+      { hour: "07h às 08h", name: "Cross Trainig" },
+      { hour: "08h às 09h", name: "Fit Dance" },
+      { hour: "18h às 19h", name: "Cross Training" },
+      { hour: "19h às 20h", name: "Fit Dance" },
+      { hour: "20h às 21h", name: "Gap" },
+    ],
+  },
+  {
+    dayWeek: "Quinta-Feira",
+    activies: [
+      { hour: "06h às 07h", name: "Gap" },
+      { hour: "07h às 08h", name: "Hit" },
+      { hour: "08h às 09h", name: "Step" },
+      { hour: "18h às 19h", name: "Cross Kids" },
+      { hour: "19h às 20h", name: "Cross Fight" },
+      { hour: "20h às 21h", name: "Cross Training" },
+    ],
+  },
+  {
+    dayWeek: "Sexta-Feira",
+    activies: [
+      { hour: "06h às 07h", name: "Cross Fight" },
+      { hour: "07h às 08h", name: "Cross Training" },
+      { hour: "08h às 09h", name: "Fit Dance" },
+      { hour: "18h às 19h", name: "Gap" },
+      { hour: "19h às 20h", name: "Fit Dance" },
+      { hour: "20h às 21h", name: "Cross Training" },
+    ],
+  },
+];
+
+export const imagesGallery = [
+  { image: image00001 },
+  { image: image00003 },
+  { image: image00005 },
+  { image: image00007 },
+  { image: image00009 },
+  { image: image00011 },
+  { image: image00013 },
+  { image: image00015 },
+  { image: image00017 },
+  { image: image00019 },
+  { image: image00021 },
+  { image: image00023 },
+  { image: image00025 },
+  { image: image00027 },
+  { image: image00029 },
+  { image: image00031 },
+  { image: image00034 },
+  { image: image00036 },
+  { image: image00038 },
+  { image: image00040 },
+  { image: image00042 },
+  { image: image00044 },
+  { image: image00046 },
+  { image: image00048 },
+  { image: image00050 },
+  { image: image00052 },
+  { image: image00054 },
+  { image: image00056 },
+  { image: image00058 },
+  { image: image00060 },
+  { image: image00062 },
+  { image: image00064 },
+  { image: image00066 },
+  { image: image00068 },
+  { image: image00070 },
+  { image: image00072 },
+  { image: image00074 },
+  { image: image00076 },
+  { image: image00078 },
+  { image: image00080 },
+  { image: image00082 },
+  { image: image00084 },
+  { image: image00086 },
+  { image: image00088 },
+  { image: image00090 },
+  { image: image00092 },
+  { image: image00095 },
+  { image: image00097 },
 ];
 
 export const DataPlans: ICardPlans[] = [
