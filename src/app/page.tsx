@@ -5,6 +5,7 @@ import { Feedbacks } from "@/components/Feedbacks";
 import { Plans } from "@/components/Plans";
 import { Footer } from "@/components/Footer";
 import { Activities } from "@/components/Activies/Activities";
+import { Gallery } from "@/components/Gallery/Gallery";
 
 export default function Home() {
   return (
@@ -22,6 +23,9 @@ export default function Home() {
         </section>
         <section id="plans">
           <Plans />
+        </section>
+        <section>
+          <Gallery />
         </section>
         <section id="feedbacks">
           <Feedbacks />
