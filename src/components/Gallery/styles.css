@@ -1,7 +1,6 @@
 .swiper {
   width: 100%;
   min-height: 200px;
-  border-radius: 0.75rem;
 }
 
 .swiper-slide {
@@ -14,7 +13,7 @@
   align-items: center;
 }
 
-.mySwiper .swiper-slide img {
+.gallerySwiper .swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
@@ -22,7 +21,7 @@
 }
 
 @media (min-width: 1040px) {
-  .mySwiper .swiper-slide img {
+  .gallerySwiper .swiper-slide img {
     border-radius: 8px;
     display: block;
     width: 100%;

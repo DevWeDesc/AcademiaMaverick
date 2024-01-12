@@ -6,7 +6,7 @@ import "swiper/css/navigation";
 import "./style.css";
 import Image from "next/image";
 import stars from "../../../public/Frame 13.png";
-import { ISwiperFeedbacks } from "../../../types/types";
+import { ISwiperFeedbacks } from "../../../@types/types";
 import { comentsData } from "../../../data/data";
 import { User2 } from "lucide-react";
 

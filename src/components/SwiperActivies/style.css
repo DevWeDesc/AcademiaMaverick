@@ -1,0 +1,349 @@
+.mySwiperFeedback {
+  width: 100%;
+  min-height: 200px;
+  height: auto;
+}
+
+.mySwiperFeedback .swiper-slide {
+  min-height: 200px;
+  text-align: center;
+  font-size: 18px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* :root {
+  --swiper-navigation-size: 32px;
+  --swiper-navigation-color: #fff;
+} */
+
+.mySwiperFeedback .swiper-button-prev,
+.mySwiperFeedback .swiper-button-next {
+  right: 0;
+  top: 20px;
+  width: 32px;
+  height: 32px;
+  margin-top: calc(0px - (32px / 2));
+  z-index: 10;
+  cursor: pointer;
+  display: flex;
+  border-radius: 50%;
+  border: 1px solid #3b393a;
+  background-color: #000;
+  color: #000;
+  opacity: 0.85;
+  transition: 0.2s;
+}
+
+.mySwiperFeedback .swiper-button-prev:hover,
+.mySwiperFeedback .swiper-button-next:hover {
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+.mySwiperFeedback .swiper-button-prev.swiper-button-disabled,
+.mySwiperFeedback .swiper-button-next.swiper-button-disabled {
+  opacity: 0;
+  cursor: auto;
+  pointer-events: none;
+}
+.mySwiperFeedback .swiper-button-prev.swiper-button-hidden,
+.mySwiperFeedback .swiper-button-next.swiper-button-hidden {
+  opacity: 0;
+  cursor: auto;
+  pointer-events: none;
+}
+.mySwiperFeedback .swiper-navigation-disabled .swiper-button-prev,
+.mySwiperFeedback .swiper-navigation-disabled .swiper-button-next {
+  display: none !important;
+}
+.mySwiperFeedback .swiper-button-prev svg,
+.mySwiperFeedback .swiper-button-next svg {
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+  transform-origin: center;
+}
+.mySwiperFeedback .swiper-rtl .swiper-button-prev svg,
+.mySwiperFeedback .swiper-rtl .swiper-button-next svg {
+  transform: rotate(180deg);
+}
+.mySwiperFeedback .swiper-button-prev,
+.mySwiperFeedback .swiper-rtl .swiper-button-next {
+  left: var(--swiper-navigation-sides-offset, 10px);
+  right: 10;
+}
+.mySwiperFeedback .swiper-button-next,
+.mySwiperFeedback .swiper-rtl .swiper-button-prev {
+  right: 10;
+  left: auto;
+}
+.mySwiperFeedback .swiper-button-lock {
+  display: none;
+}
+/* Navigation font start */
+.mySwiperFeedback .swiper-button-prev:after,
+.mySwiperFeedback .swiper-button-next:after {
+  font-family: swiper-icons;
+  font-size: 10px;
+  color: rgb(255, 255, 255);
+  font-weight: 300;
+  text-transform: none !important;
+  letter-spacing: 0;
+  font-variant: initial;
+  line-height: 1;
+}
+.mySwiperFeedback .swiper-button-prev:after,
+.mySwiperFeedback .swiper-rtl .swiper-button-next:after {
+  content: "prev";
+}
+.mySwiperFeedback .swiper-button-next,
+.mySwiperFeedback .swiper-rtl .swiper-button-prev {
+  right: var(--swiper-navigation-sides-offset, 10px);
+  left: auto;
+}
+.mySwiperFeedback .swiper-button-next:after,
+.mySwiperFeedback .swiper-rtl .swiper-button-prev:after {
+  content: "next";
+}
+
+/* Navigation font end */
+.mySwiperFeedback .swiper-pagination {
+  position: absolute;
+  text-align: center;
+  transition: 300ms opacity;
+  transform: translate3d(0, 0, 0);
+  z-index: 10;
+}
+.mySwiperFeedback .swiper-pagination.swiper-pagination-hidden {
+  opacity: 0;
+}
+.mySwiperFeedback .swiper-pagination-disabled > .swiper-pagination,
+.mySwiperFeedback .swiper-pagination.swiper-pagination-disabled {
+  display: none !important;
+}
+/* Common Styles */
+.mySwiperFeedback .swiper-pagination-fraction,
+.mySwiperFeedback .swiper-pagination-custom,
+.mySwiperFeedback .swiper-horizontal > .swiper-pagination-bullets,
+.mySwiperFeedback .swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: var(--swiper-pagination-bottom, 8px);
+  top: var(--swiper-pagination-top, auto);
+  left: 0;
+  width: 100%;
+}
+/* Bullets */
+.mySwiperFeedback .swiper-pagination-bullets-dynamic {
+  overflow: hidden;
+  font-size: 0;
+}
+.mySwiperFeedback .swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
+  transform: scale(0.33);
+  position: relative;
+}
+.mySwiperFeedback
+  .swiper-pagination-bullets-dynamic
+  .swiper-pagination-bullet-active {
+  transform: scale(1);
+}
+.mySwiperFeedback
+  .swiper-pagination-bullets-dynamic
+  .swiper-pagination-bullet-active-main {
+  transform: scale(1);
+}
+.mySwiperFeedback
+  .swiper-pagination-bullets-dynamic
+  .swiper-pagination-bullet-active-prev {
+  transform: scale(0.66);
+}
+.mySwiperFeedback
+  .swiper-pagination-bullets-dynamic
+  .swiper-pagination-bullet-active-prev-prev {
+  transform: scale(0.33);
+}
+.mySwiperFeedback
+  .swiper-pagination-bullets-dynamic
+  .swiper-pagination-bullet-active-next {
+  transform: scale(0.66);
+}
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next-next {
+  transform: scale(0.33);
+}
+.mySwiperFeedback .swiper-pagination-bullet {
+  width: var(
+    --swiper-pagination-bullet-width,
+    var(--swiper-pagination-bullet-size, 8px)
+  );
+  height: var(
+    --swiper-pagination-bullet-height,
+    var(--swiper-pagination-bullet-size, 8px)
+  );
+  display: inline-block;
+  border-radius: var(--swiper-pagination-bullet-border-radius, 50%);
+  background: var(--swiper-pagination-bullet-inactive-color, #ffffff);
+  opacity: var(--swiper-pagination-bullet-inactive-opacity, 0.2);
+}
+.mySwiperFeedback button.swiper-pagination-bullet {
+  border: none;
+  margin: 0;
+  padding: 0;
+  box-shadow: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.mySwiperFeedback .swiper-pagination-clickable .swiper-pagination-bullet {
+  cursor: pointer;
+}
+.mySwiperFeedback .swiper-pagination-bullet:only-child {
+  display: none !important;
+}
+.mySwiperFeedback .swiper-pagination-bullet-active {
+  opacity: var(--swiper-pagination-bullet-opacity, 1);
+  background: #fff;
+}
+.mySwiperFeedback .swiper-vertical > .swiper-pagination-bullets,
+.mySwiperFeedback .swiper-pagination-vertical.swiper-pagination-bullets {
+  right: var(--swiper-pagination-right, 8px);
+  left: var(--swiper-pagination-left, auto);
+  top: 50%;
+  transform: translate3d(0px, -50%, 0);
+}
+.mySwiperFeedback
+  .swiper-vertical
+  > .swiper-pagination-bullets
+  .swiper-pagination-bullet,
+.mySwiperFeedback
+  .swiper-pagination-vertical.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  margin: var(--swiper-pagination-bullet-vertical-gap, 6px) 0;
+  display: block;
+}
+.mySwiperFeedback
+  .swiper-vertical
+  > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic,
+.swiper-pagination-vertical.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+  top: 50%;
+  transform: translateY(-50%);
+  width: 8px;
+}
+.swiper-vertical
+  > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic
+  .swiper-pagination-bullet,
+.swiper-pagination-vertical.swiper-pagination-bullets.swiper-pagination-bullets-dynamic
+  .swiper-pagination-bullet {
+  display: inline-block;
+  transition: 200ms transform, 200ms top;
+}
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 4px);
+}
+.swiper-horizontal
+  > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic,
+.swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+.mySwiperFeedback
+  .swiper-horizontal
+  > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic
+  .swiper-pagination-bullet,
+.mySwiperFeedback
+  .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic
+  .swiper-pagination-bullet {
+  transition: 200ms transform, 200ms left;
+}
+.mySwiperFeedback
+  .swiper-horizontal.swiper-rtl
+  > .swiper-pagination-bullets-dynamic
+  .swiper-pagination-bullet {
+  transition: 200ms transform, 200ms right;
+}
+/* Fraction */
+.mySwiperFeedback .swiper-pagination-fraction {
+  color: var(--swiper-pagination-fraction-color, inherit);
+}
+/* Progress */
+.mySwiperFeedback .swiper-pagination-progressbar {
+  background: var(
+    --swiper-pagination-progressbar-bg-color,
+    rgba(0, 0, 0, 0.25)
+  );
+  position: absolute;
+}
+.mySwiperFeedback
+  .swiper-pagination-progressbar
+  .swiper-pagination-progressbar-fill {
+  background: var(--swiper-pagination-color, var(--swiper-theme-color));
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transform: scale(0);
+  transform-origin: left top;
+}
+.mySwiperFeedback
+  .swiper-rtl
+  .swiper-pagination-progressbar
+  .swiper-pagination-progressbar-fill {
+  transform-origin: right top;
+}
+.mySwiperFeedback .swiper-horizontal > .swiper-pagination-progressbar,
+.mySwiperFeedback .swiper-pagination-progressbar.swiper-pagination-horizontal,
+.mySwiperFeedback
+  .swiper-vertical
+  > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite,
+.mySwiperFeedback
+  .swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite {
+  width: 100%;
+  height: var(--swiper-pagination-progressbar-size, 4px);
+  left: 0;
+  top: 0;
+}
+.mySwiperFeedback .swiper-vertical > .swiper-pagination-progressbar,
+.mySwiperFeedback .swiper-pagination-progressbar.swiper-pagination-vertical,
+.mySwiperFeedback
+  .swiper-horizontal
+  > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite,
+.mySwiperFeedback
+  .swiper-pagination-progressbar.swiper-pagination-horizontal.swiper-pagination-progressbar-opposite {
+  width: var(--swiper-pagination-progressbar-size, 4px);
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+.mySwiperFeedback .swiper-pagination-lock {
+  display: none;
+}
+
+@media (min-width: 1040px) {
+  .mySwiperFeedback .swiper-button-prev,
+  .mySwiperFeedback .swiper-button-next {
+    right: 0;
+    top: 20px;
+    width: 52px;
+    height: 52px;
+    margin-top: calc(0px - (32px / 2));
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    border-radius: 50%;
+    border: 1px solid #3b393a;
+    background-color: #000;
+    color: #000;
+    opacity: 0.85;
+    transition: 0.2s;
+  }
+  .mySwiperFeedback .swiper-button-prev svg,
+  .mySwiperFeedback .swiper-button-next svg {
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+    transform-origin: center;
+  }
+}
