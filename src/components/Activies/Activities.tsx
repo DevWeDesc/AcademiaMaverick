@@ -1,5 +1,6 @@
 import React from "react";
 import { GridActivies } from "./GridActivies";
+import { SwiperActivies } from "../SwiperActivies/SwiperActivies";
 
 export const Activities = () => {
   return (
@@ -26,7 +27,8 @@ export const Activities = () => {
           </p>
         </div>
       </div>
-      <GridActivies />
+      <SwiperActivies />
+      {/* <GridActivies /> */}
     </div>
   );
 };
