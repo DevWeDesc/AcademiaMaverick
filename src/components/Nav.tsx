@@ -8,6 +8,7 @@ import {
   Home,
   CircleDollarSign,
   Dumbbell,
+  PersonStanding,
 } from "lucide-react";
 
 export const Nav = ({ navOpen, HandleNavOpen }: INav) => {
@@ -28,6 +29,9 @@ export const Nav = ({ navOpen, HandleNavOpen }: INav) => {
         break;
       case "Planos":
         component = <CircleDollarSign />;
+        break;
+      case "Parceiros":
+        component = <PersonStanding />;
         break;
       default:
         component = <Dumbbell />;
