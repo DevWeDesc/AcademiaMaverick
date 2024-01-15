@@ -16,18 +16,18 @@ export const SwiperActivies = () => {
         // slidesPerView={6}
         navigation={true}
         modules={[Navigation]}
-        className="flex flex-col mySwiper relative"
+        className="flex flex-col swiperActivies relative"
       >
         {ActiviesData.map((item, index) => (
           <SwiperSlide
             key={index}
             className="cursor-grab active:cursor-grabbing"
           >
-            <div className="flex flex-col gap-5">
+            <div className="flex flex-col gap-5 p-4 lg:px-12">
               <p className="text-white text-2xl font-semibold">
                 {item.dayWeek}
               </p>
-              <div key={index} className="flex">
+              <div key={index} className="grid grid-cols-3 lg:grid-cols-6 ">
                 {item?.activies?.map((data, index) => (
                   <CardActivies key={index} hour={data.name} name={data.hour} />
                 ))}
