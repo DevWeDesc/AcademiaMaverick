@@ -6,6 +6,8 @@ import {
   Ischedules,
 } from "../@types/types";
 import PhotoPrimaryComent from "../public/ImageWesley.jpeg";
+import PhotoSecondaryComent from "../public/imageUserFeedback.png";
+import PhotoTerceryComent from "../public/imgeUserComent2.png";
 import image00001 from "../public/imagesMaverick/image00001.jpeg";
 import image00002 from "../public/imagesMaverick/image00002.jpeg";
 import image00003 from "../public/imagesMaverick/image00003.jpeg";
@@ -290,7 +292,21 @@ export const schedulesData: Ischedules[] = [
   { days: "Domingo", schedules: "das 8:00 as 14:00" },
 ];
 
+// PhotoTerceryComent
+// Excelente academia! Adoro o ambiente familiar, somos muito bem recebidos. Os professores são muito atenciosos. A estrutura é muito completa, aparelhos novinhos fazem toda a diferença! Indico de olhos fechados!
+
 export const comentsData: IComents[] = [
+  {
+    photo: PhotoSecondaryComent,
+    name: "Pedro cesar Alvares",
+    content: "A melhor academia de Mauá Profissionais altamente qualificados.",
+  },
+  {
+    photo: PhotoTerceryComent,
+    name: "Erika dos Reis",
+    content:
+      "Excelente academia! Adoro o ambiente familiar, somos muito bem recebidos. Os professores são muito atenciosos.",
+  },
   {
     photo: PhotoPrimaryComent,
     name: "Wesley M.",
@@ -306,5 +322,9 @@ export const comentsData: IComents[] = [
     name: "Lucas M.",
     content:
       "Os instrutores na Energia Total são simplesmente os melhores!! Eles conhecem seus nomes e seus objetivos.",
+  },
+  {
+    name: "João Pedro",
+    content: `A mais linda e sofisticada academia de Mauá ♥️ Professores e recepcionistas extremamente educados e profissionais.`,
   },
 ];
