@@ -299,6 +299,7 @@ export const dataPartnerShips: IPartnerShips[] = [
   },
   {
     from: "Tenha acesso a partir do TP1 +",
+    observation: ["Personal particular através do plano TP4"],
     image: TotalPass,
     title: "Totalpass",
     content:

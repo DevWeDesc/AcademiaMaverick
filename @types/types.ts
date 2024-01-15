@@ -28,11 +28,11 @@ export type ICardPlans = {
 
 export type IPartnerShips = {
   image: string | StaticImageData;
+  observation?: string[] | undefined;
   from: string;
   title: string;
   content: string;
 };
-
 type ArrayBenefits = {
   content: string;
 };

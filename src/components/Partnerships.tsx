@@ -18,6 +18,7 @@ export const Partnerships = () => {
       </div>
       {dataPartnerShips.map((data, index) => (
         <CardPartnerShips
+          observation={data.observation}
           from={data.from}
           image={data.image}
           key={index}
