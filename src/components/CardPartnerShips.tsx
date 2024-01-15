@@ -28,8 +28,15 @@ export const CardPartnerShips = ({
       <p className="font-bold">{title}</p>
       <div>
         <p className="font-normal text-[11px] mb-3">{content}</p>
+
+        <p className="font-semibold text-sm text-center py-4">{from}</p>
+        <div
+          className={`transition-all h-[1px] m-auto bg-white ${
+            transitionFooter ? "w-10/12" : "w-3/12"
+          }`}
+        />
         {observation.length > 0 && (
-          <p className="text-[11px] font-semibold py-2 text-logoColorLight">
+          <p className="text-[11px] font-semibold pt-5 py-2 text-logoColorLight">
             Observações
           </p>
         )}
@@ -41,12 +48,6 @@ export const CardPartnerShips = ({
             <Check size={15} /> {data}
           </p>
         ))}
-        <p className="font-semibold text-sm text-center py-4">{from}</p>
-        <div
-          className={`transition-all h-[1px] m-auto bg-white ${
-            transitionFooter ? "w-10/12" : "w-3/12"
-          }`}
-        />
       </div>
     </div>
   );
