@@ -26,6 +26,13 @@ export type ICardPlans = {
   benefits: ArrayBenefits[];
 };
 
+export type IPartnerShips = {
+  image: string | StaticImageData;
+  from: string;
+  title: string;
+  content: string;
+};
+
 type ArrayBenefits = {
   content: string;
 };
