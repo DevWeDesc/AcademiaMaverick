@@ -27,7 +27,10 @@ export const SwiperActivies = () => {
               <p className="text-white text-2xl font-semibold">
                 {item.dayWeek}
               </p>
-              <div key={index} className="grid grid-cols-3 lg:grid-cols-6 ">
+              <div
+                key={index}
+                className="grid grid-cols-3 lg:grid-cols-6 gap-4"
+              >
                 {item?.activies?.map((data, index) => (
                   <CardActivies key={index} hour={data.name} name={data.hour} />
                 ))}
