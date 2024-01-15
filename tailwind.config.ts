@@ -21,6 +21,7 @@ const config: Config = {
       },
       boxShadow: {
         card: "0px 0px 60px -10px rgba(0 0 0 / 0.05)",
+        cardDefault: "0px 0px 200px -50px rgba(0 0 0 0 / 0.001)",
       },
 
       backgroundImage: {
