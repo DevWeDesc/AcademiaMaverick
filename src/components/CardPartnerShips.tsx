@@ -28,7 +28,7 @@ export const CardPartnerShips = ({
       <p className="font-bold">{title}</p>
       <div>
         <p className="font-normal text-[11px] mb-3">{content}</p>
-        {observation?.length > 0 && (
+        {observation.length > 0 && (
           <p className="text-[11px] font-semibold py-2 text-logoColorLight">
             Observações
           </p>

@@ -293,6 +293,7 @@ export const dataPartnerShips: IPartnerShips[] = [
   {
     from: "Tenha acesso a partir do Basic +",
     image: GymPass,
+    observation: [],
     title: "Gympass",
     content:
       "O Gympass é uma plataforma que oferece acesso a uma variedade de academias, estúdios e atividades físicas, por meio de planos corporativos. Com ele, as empresas podem oferecer aos seus colaboradores uma ampla gama de opções para praticar atividades físicas, de acordo com suas necessidades e preferências.",
@@ -308,6 +309,7 @@ export const dataPartnerShips: IPartnerShips[] = [
   {
     from: "Tenha acesso com Diárias de R$ 20,00",
     image: GuruPass,
+    observation: [],
     title: "Gurupass",
     content:
       "O Gurupass é uma plataforma que oferece acesso a uma variedade de academias e estúdios, por meio de diárias corporativas. Com ele, as empresas podem oferecer aos seus colaboradores a oportunidade de experimentar diferentes modalidades, sem precisar se comprometer com um plano mensal.",

@@ -28,7 +28,7 @@ export type ICardPlans = {
 
 export type IPartnerShips = {
   image: string | StaticImageData;
-  observation?: string[] | undefined;
+  observation: string[];
   from: string;
   title: string;
   content: string;
