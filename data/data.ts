@@ -3,6 +3,7 @@ import {
   ICardPlans,
   IComents,
   IDataNav,
+  IPartnerShips,
   Ischedules,
 } from "../@types/types";
 import PhotoPrimaryComent from "../public/ImageWesley.jpeg";
@@ -104,6 +105,9 @@ import image00095 from "../public/imagesMaverick/image00095.jpeg";
 import image00096 from "../public/imagesMaverick/image00096.jpeg";
 import image00097 from "../public/imagesMaverick/image00097.jpeg";
 import image00098 from "../public/imagesMaverick/image00098.jpeg";
+import TotalPass from "../public/TotalPassLogo.jpg";
+import GymPass from "../public/logo-gympass.jpg";
+import GuruPass from "../public/Gurupass.png";
 
 export const DataNav: IDataNav[] = [
   { name: "Inicio", url: "#init" },
@@ -111,6 +115,7 @@ export const DataNav: IDataNav[] = [
   { name: "Atividades", url: "#activies" },
   { name: "Planos", url: "#plans" },
   { name: "Feedbacks", url: "#feedbacks" },
+  { name: "Parceiros", url: "#partnetships" },
   // { name: "Trabalhe Conosco", url: "#workwithus" },
 ];
 
@@ -281,6 +286,30 @@ export const DataPlans: ICardPlans[] = [
       { content: "Sessões de treinamento personalizado" },
       { content: "Acompanhamento de progresso" },
     ],
+  },
+];
+
+export const dataPartnerShips: IPartnerShips[] = [
+  {
+    from: "Tenha acesso a partir do Basic +",
+    image: GymPass,
+    title: "Gympass",
+    content:
+      "O Gympass é uma plataforma que oferece acesso a uma variedade de academias, estúdios e atividades físicas, por meio de planos corporativos. Com ele, as empresas podem oferecer aos seus colaboradores uma ampla gama de opções para praticar atividades físicas, de acordo com suas necessidades e preferências.",
+  },
+  {
+    from: "Tenha acesso a partir do TP1 +",
+    image: TotalPass,
+    title: "Totalpass",
+    content:
+      " Totalpass é uma plataforma que oferece acesso a uma variedade de academias, estúdios e atividades físicas, por meio de planos corporativos. Com ele, as empresas podem oferecer aos seus colaboradores uma maneira conveniente e flexível de praticar atividades físicas.",
+  },
+  {
+    from: "Tenha acesso com Diárias de R$ 20,00",
+    image: GuruPass,
+    title: "Gurupass",
+    content:
+      "O Gurupass é uma plataforma que oferece acesso a uma variedade de academias e estúdios, por meio de diárias corporativas. Com ele, as empresas podem oferecer aos seus colaboradores a oportunidade de experimentar diferentes modalidades, sem precisar se comprometer com um plano mensal.",
   },
 ];
 
