@@ -13,7 +13,12 @@ export const Header = () => {
 
   return (
     <div className="fixed w-full z-10 top-0 bg-black pl-3 pr-5 flex items-center justify-between lg:px-20 lg:py-1 lg:border-b-[1px] lg:border-[#222222] 4xl:px-96">
-      <Image alt="Logo da empresa" className="w-28" src={Logo} />
+      <div className="flex items-center w-full gap-[10%] xl:gap-20">
+        <Image alt="Logo da empresa" className="w-28" src={Logo} />
+        <p className="text-white text-xs font-bold hover:text-logoColor transition-colors">
+          Academia 24hrs
+        </p>
+      </div>
       <div
         onClick={handleOpenHamburguer}
         className="w-10 h-10 p-2 flex flex-col cursor-pointer hover:bg-zinc-700  rounded-full justify-center gap-[6px] opacity-60 lg:hidden"
