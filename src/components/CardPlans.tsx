@@ -8,7 +8,7 @@ export const CardPlans = ({ title, price, benefits }: ICardPlans) => {
   let totalInFront: string = totalPrice.toFixed(2).replace(".", ",");
 
   return (
-    <div className="px-5 py-8 border border-logoColor rounded-lg flex flex-col items-center hover:shadow-card hover:shadow-logoColorLight transition-all">
+    <div className="px-5 h-full pt-8 pb-12 border border-logoColor rounded-lg flex flex-col items-center hover:shadow-card hover:shadow-logoColorLight transition-all relative">
       <p className="font-bold mb-7">{title}</p>
       <div className="flex items-center gap-2 mb-5">
         <div className="flex items-center gap-2">
@@ -39,7 +39,7 @@ export const CardPlans = ({ title, price, benefits }: ICardPlans) => {
         ))}
       </div>
       <a
-        className="w-full"
+        className="w-full absolute bottom-0 p-5"
         target="_blank"
         href={`https://api.whatsapp.com/send?phone=5511948451643&text=Estou%20interessado%20em%20me%20inscrever%20na%20Maverick,%20no%20plano%20${title}%20de%20R$${price}!`}
       >

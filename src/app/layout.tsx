@@ -22,7 +22,7 @@ export default function RootLayout({
         <link rel="icon" href="" sizes="32x32" />
       </head>
       <AppContextProvider>
-        <body className={inter.className}>{children}</body>
+        <body className={`${inter.className} bg-black`}>{children}</body>
       </AppContextProvider>
     </html>
   );
