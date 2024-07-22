@@ -108,6 +108,7 @@ import image00098 from "../public/imagesMaverick/image00098.jpeg";
 import TotalPass from "../public/TotalPassLogo.jpg";
 import GymPass from "../public/logo-gympass.jpg";
 import GuruPass from "../public/Gurupass.png";
+import WellHub from "../public/logoWellhub.png";
 
 export const DataNav: IDataNav[] = [
   { name: "Inicio", url: "#init" },
@@ -249,6 +250,8 @@ export const DataPlans: ICardPlans[] = [
       { content: "Consulta inicial com um treinador" },
       { content: "Sessões de treinamento personalizado" },
       { content: "Acompanhamento de progresso" },
+      { content: "Uma consulta gratuita com a nutricionista" },
+      { content: "Avaliação Física + Plano Alimentar" },
     ],
   },
   {
@@ -292,11 +295,11 @@ export const DataPlans: ICardPlans[] = [
 export const dataPartnerShips: IPartnerShips[] = [
   {
     from: "Tenha acesso a partir do Basic +",
-    image: GymPass,
+    image: WellHub,
     observation: [],
-    title: "Gympass",
+    title: "Wellhub",
     content:
-      "O Gympass é uma plataforma que oferece acesso a uma variedade de academias, estúdios e atividades físicas, por meio de planos corporativos. Com ele, as empresas podem oferecer aos seus colaboradores uma ampla gama de opções para praticar atividades físicas, de acordo com suas necessidades e preferências.",
+      "O Wellhub é uma plataforma digital focada em bem-estar e saúde ocupacional. Ela oferece soluções para monitoramento, gestão e melhoria da saúde dos colaboradores dentro de empresas. Através de ferramentas como avaliações de saúde, programas de bem-estar e muito mais.",
   },
   {
     from: "Tenha acesso a partir do TP1 +",
@@ -304,7 +307,7 @@ export const dataPartnerShips: IPartnerShips[] = [
     image: TotalPass,
     title: "Totalpass",
     content:
-      " Totalpass é uma plataforma que oferece acesso a uma variedade de academias, estúdios e atividades físicas, por meio de planos corporativos. Com ele, as empresas podem oferecer aos seus colaboradores uma maneira conveniente e flexível de praticar atividades físicas.",
+      "Totalpass é uma plataforma que oferece acesso a uma variedade de academias, estúdios e atividades físicas, por meio de planos corporativos. Com ele, as empresas podem oferecer aos seus colaboradores uma maneira conveniente e flexível de praticar atividades físicas.",
   },
   {
     from: "Tenha acesso com Diárias de R$ 20,00",
