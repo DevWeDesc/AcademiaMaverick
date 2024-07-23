@@ -29,10 +29,10 @@ export const SwiperActivies = () => {
               </p>
               <div
                 key={index}
-                className="grid grid-cols-3 lg:grid-cols-6 gap-4"
+                className={`grid grid-cols-3 ${`xl:grid-cols-${item.activies.length}`} gap-4 content-center justify-center`}
               >
                 {item?.activies?.map((data, index) => (
-                  <CardActivies key={index} hour={data.name} name={data.hour} />
+                  <CardActivies key={index} hour={data.hour} name={data.name} />
                 ))}
               </div>
             </div>
