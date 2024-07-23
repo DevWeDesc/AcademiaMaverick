@@ -12,7 +12,7 @@ export const Footer = () => {
       <Image alt="Logo da empresa" className="object-contain w-40" src={Logo} />
       <div className="flex flex-col items-center gap-8">
         <div className="flex flex-col gap-5 items-center">
-          <h3 className="font-semibold">Horarios de Funcionamento</h3>
+          <h3 className="font-semibold">Horários de Funcionamento</h3>
           {schedulesData.map((data, index) => (
             <div key={index} className="flex flex-col items-center">
               <p className="font-bold text-sm">{data.days}</p>
