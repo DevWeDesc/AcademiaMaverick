@@ -134,56 +134,52 @@ export const ActiviesData: IActivies[] = [
   {
     dayWeek: "Segunda-Feira",
     activies: [
-      { hour: "06h às 07h", name: "Pilates" },
-      { hour: "07h às 08h", name: "Cross Fight" },
-      { hour: "08h às 09h", name: "Fit Dance" },
-      { hour: "18h às 19h", name: "Step" },
-      { hour: "19h às 20h", name: "Fit Dance" },
-      { hour: "20h às 21h", name: "Abdominal + Alongamento" },
-    ],
-  },
-  {
-    dayWeek: "Terça-Feira",
-    activies: [
-      { hour: "06h às 07h", name: "Gap" },
-      { hour: "07h às 08h", name: "Hit" },
-      { hour: "08h às 09h", name: "Abdominal + Alongamento" },
-      { hour: "18h às 19h", name: "Cross Kids" },
-      { hour: "19h às 20h", name: "Cross Training" },
-      { hour: "20h às 21h", name: "Cross Fight" },
-    ],
-  },
-  {
-    dayWeek: "Quarta-Feira",
-    activies: [
-      { hour: "06h às 07h", name: "Abdominal + Alongamento" },
-      { hour: "07h às 08h", name: "Cross Trainig" },
-      { hour: "08h às 09h", name: "Fit Dance" },
-      { hour: "18h às 19h", name: "Cross Training" },
+      { hour: "07h às 08h", name: "Pilates" },
+      { hour: "08h às 09h", name: "Cross Training" },
+      { hour: "09h às 10h", name: "Fit Dance" },
+      { hour: "18h às 19h", name: "Pilates" },
       { hour: "19h às 20h", name: "Fit Dance" },
       { hour: "20h às 21h", name: "Gap" },
     ],
   },
   {
+    dayWeek: "Terça-Feira",
+    activies: [
+      { hour: "09h às 10h", name: "Abdominal + Alongamento" },
+      { hour: "18h às 19h", name: "Cross Kids" },
+      { hour: "19h às 20h", name: "Cross Training" },
+      { hour: "20h às 21h", name: "Muay Thai" },
+    ],
+  },
+  {
+    dayWeek: "Quarta-Feira",
+    activies: [
+      { hour: "07h às 08h", name: "Pilates" },
+      { hour: "08h às 09h", name: "Cross Training" },
+      { hour: "09h às 10h", name: "Fit Dance" },
+      { hour: "18h às 19h", name: "Abdominal e Alongamento" },
+      { hour: "19h às 20h", name: "Fit Dance" },
+      { hour: "20h às 21h", name: "Step" },
+    ],
+  },
+  {
     dayWeek: "Quinta-Feira",
     activies: [
-      { hour: "06h às 07h", name: "Gap" },
-      { hour: "07h às 08h", name: "Hit" },
-      { hour: "08h às 09h", name: "Step" },
+      { hour: "09h às 10h", name: "Abdominal + Alongamento" },
       { hour: "18h às 19h", name: "Cross Kids" },
-      { hour: "19h às 20h", name: "Cross Fight" },
+      { hour: "19h às 20h", name: "Muay Thai" },
       { hour: "20h às 21h", name: "Cross Training" },
     ],
   },
   {
     dayWeek: "Sexta-Feira",
     activies: [
-      { hour: "06h às 07h", name: "Cross Fight" },
-      { hour: "07h às 08h", name: "Cross Training" },
-      { hour: "08h às 09h", name: "Fit Dance" },
-      { hour: "18h às 19h", name: "Gap" },
+      { hour: "07h às 08h", name: "Muay Thai" },
+      { hour: "08h às 09h", name: "Cross Training" },
+      { hour: "09h às 10h", name: "Fit Dance" },
+      { hour: "18h às 19h", name: "Pilates" },
       { hour: "19h às 20h", name: "Fit Dance" },
-      { hour: "20h às 21h", name: "Cross Training" },
+      { hour: "20h às 21h", name: "Step" },
     ],
   },
 ];
@@ -325,6 +321,7 @@ export const schedulesData: Ischedules[] = [
   { days: "Sexta", schedules: "Termino 00:00" },
   { days: "Sábado", schedules: "das 8:00 as 18:00" },
   { days: "Domingo", schedules: "das 8:00 as 14:00" },
+  { days: "Feriado", schedules: "das 08h ás 18h" },
 ];
 
 // PhotoTerceryComent
