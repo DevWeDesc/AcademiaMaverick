@@ -3,7 +3,7 @@ import { SwiperActivies } from "../SwiperActivies/SwiperActivies";
 
 export const Activities = () => {
   return (
-    <div className="text-white flex px-5 lg:text-center flex-col items-center gap-12 pt-16 lg:py-20 lg:px-36 bg-black max-w-[1700px] m-auto 4xl:px-0">
+    <div className="text-white font-sans flex px-5 lg:text-center flex-col items-center gap-12 pt-16 lg:py-20 lg:px-36 bg-black max-w-[1700px] m-auto 4xl:px-0">
       <div className="space-y-1">
         <div className="py-9 space-y-1">
           <h2 className="font-bold text-2xl lg:text-5xl">

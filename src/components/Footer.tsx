@@ -8,7 +8,7 @@ import { BsWhatsapp } from "react-icons/bs";
 
 export const Footer = () => {
   return (
-    <div className="bg-black text-white flex flex-col items-center py-8 gap-10 border-t-[2px] border-[#222222] lg:flex-row lg:justify-between lg:px-36 4xl:px-96">
+    <div className="font-sans bg-black text-white flex flex-col items-center py-8 gap-10 border-t-[2px] border-[#222222] lg:flex-row lg:justify-between lg:px-36 4xl:px-96">
       <Image alt="Logo da empresa" className="object-contain w-40" src={Logo} />
       <div className="flex flex-col items-center gap-8">
         <div className="flex flex-col gap-5 items-center">

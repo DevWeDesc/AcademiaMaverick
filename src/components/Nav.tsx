@@ -42,15 +42,12 @@ export const Nav = ({ navOpen, HandleNavOpen }: INav) => {
 
   return (
     <div
-      className={`text-sm items-center fixed right-0 flex top-20 flex-col gap-10 p-10 h-[90vh] bg-black transition-all lg:opacity-100 lg:relative lg:flex-row lg:h-auto lg:top-0 ${
+      className={`font-sans text-sm items-center fixed right-0 flex top-20 flex-col gap-10 p-10 h-[90vh] bg-black transition-all lg:opacity-100 lg:relative lg:flex-row lg:h-auto lg:top-0 ${
         navOpen
           ? "z-20 opacity-100 "
           : "z-[-1] opacity-0 h-[90vh] hidden lg:flex"
       }`}
     >
-      <p className="font-semibold text-white hover:text-logoColor transition-colors">
-        Academia 24hrs
-      </p>
       {DataNav.map((data, index) => (
         <a
           aria-label={`Link para a sessão ${data.name}`}
@@ -67,7 +64,7 @@ export const Nav = ({ navOpen, HandleNavOpen }: INav) => {
           key={index}
         >
           <span className="lg:hidden">{IconsNav(data)}</span>
-          <span>{data.name}</span>
+          <span className="text-xs lg:text-sm">{data.name}</span>
         </a>
       ))}
     </div>

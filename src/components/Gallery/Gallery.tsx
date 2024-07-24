@@ -4,7 +4,7 @@ import { SwiperGallery } from "./SwiperGallery";
 export const Gallery = () => {
   return (
     <div>
-      <div className="bg-black text-white flex flex-col px-5 pt-24 lg:pt-[100px] pb-5 gap-5 items-center lg:px-36 lg:pb-0 lg:py-28 max-w-[1700px] m-auto">
+      <div className="font-sans bg-black text-white flex flex-col px-5 pt-24 lg:pt-[100px] pb-5 gap-5 items-center lg:px-36 lg:pb-0 lg:py-28 max-w-[1700px] m-auto">
         <p className="text-logoColorLight font-semibold md:col-span-2 lg:col-span-4 lg:text-center lg:text-2xl">
           Nosso maior projeto é você!
         </p>

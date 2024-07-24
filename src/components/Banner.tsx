@@ -24,15 +24,18 @@ export const Banner = () => {
           />
         </div>
         <div className="relative bottom-10 flex flex-col items-center gap-1 p-5 bg-transparent text-white lg:bottom-0 lg:justify-center lg:h-full lg:items-center lg:w-full lg:px-28">
-          <h2 className="text-2xl font-bold text-center max-w-[18rem] lg:text-5xl lg:text-left lg:min-w-full">
-            QUE TAL SE SENTIR ESPECIAL?!
+          <h2 className="font-winstone text-2xl text-center max-w-[18rem] lg:text-5xl lg:text-left lg:min-w-full">
+            Que tal se sentir especial?!
           </h2>
-          <p className="max-w-[22rem] text-center opacity-60 hover:opacity-90 transition-all lg:text-2xl lg:text-left lg:min-w-full lg:pt-1">
-            Conheça a Maverick e descubra um novo padrão de qualidade em saúde e
-            bem-estar. Estamos prontos para receber você a qualquer momento!
+          <p className="max-w-[22rem] font-sans text-center opacity-60 hover:opacity-90 transition-all lg:text-2xl lg:text-left lg:min-w-full lg:pt-1">
+            Conheça a Maverick e descubra um novo
+            <br className="hidden xl:block" /> padrão de qualidade em saúde e
+            bem-estar. <br className="hidden xl:block" /> Estamos prontos para
+            receber você a <br className="hidden xl:block" />
+            qualquer momento!
           </p>
           <a
-            aria-label="Link para dicionamento a sessão de Nossa História"
+            aria-label=" Link para dicionamento a sessão de Nossa História"
             href="#about"
             className="w-full"
           >
@@ -41,8 +44,7 @@ export const Banner = () => {
               onMouseLeave={() => setTransitionButton(false)}
               className="flex flex-row gap-2 font-semibold items-center justify-center hover:gap-4 transition-all py-6 mt-8 w-full rounded-lg hover:opacity-90"
             >
-              <span className="text-sm lg:text-lg">
-                {" "}
+              <span className="text-sm lg:text-lg font-sans">
                 Quero Saber mais sobre a Academia Maverick
               </span>
               <ChevronRight />

@@ -2,6 +2,12 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { AppContextProvider } from "../../Context/AppContext";
+import localFont from "next/font/local";
+
+const winstone = localFont({
+  src: "../fonts/freeWinstone.otf",
+  variable: "--font-free-winstone",
+});
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,7 +28,7 @@ export default function RootLayout({
         <link rel="icon" href="" sizes="32x32" />
       </head>
       <AppContextProvider>
-        <body className={`${inter.className} bg-black`}>{children}</body>
+        <body className={`${winstone.className} bg-black`}>{children}</body>
       </AppContextProvider>
     </html>
   );

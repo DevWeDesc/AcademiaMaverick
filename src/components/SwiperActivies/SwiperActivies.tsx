@@ -23,13 +23,13 @@ export const SwiperActivies = () => {
             key={index}
             className="cursor-grab active:cursor-grabbing"
           >
-            <div className="flex flex-col gap-5 p-4 lg:px-12">
+            <div className="flex flex-col w-full h-full gap-5 p-4 lg:px-12">
               <p className="text-white text-2xl font-semibold">
                 {item.dayWeek}
               </p>
               <div
                 key={index}
-                className={`grid grid-cols-3 ${`xl:grid-cols-${item.activies.length}`} gap-4 content-center justify-center`}
+                className={`grid w-full h-full grid-cols-3 grid-rows-2 xl:grid-cols-6 gap-4 content-center justify-center`}
               >
                 {item?.activies?.map((data, index) => (
                   <CardActivies key={index} hour={data.hour} name={data.name} />

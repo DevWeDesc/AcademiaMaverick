@@ -1,4 +1,3 @@
-import { px } from "framer-motion";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -11,6 +10,9 @@ const config: Config = {
     extend: {
       theme: {
         extend: {
+          fontFamily: {
+            winstone: ["var(--font-free-winstone)"],
+          },
           backgroundColor: {
             light: "#000", // Substitua pela cor de fundo desejada
           },
