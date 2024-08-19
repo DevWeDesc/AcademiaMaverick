@@ -7,6 +7,7 @@ import { Footer } from "@/components/Footer";
 import { Activities } from "@/components/Activies/Activities";
 import { Gallery } from "@/components/Gallery/Gallery";
 import { Partnerships } from "@/components/Partnerships";
+import { ImagePilates } from "@/components/ImagePilates";
 
 export default function Home() {
   return (
@@ -21,6 +22,9 @@ export default function Home() {
         </section>
         <section id="activies">
           <Activities />
+        </section>
+        <section id="imagePilates">
+          <ImagePilates />
         </section>
         <section id="plans">
           <Plans />
