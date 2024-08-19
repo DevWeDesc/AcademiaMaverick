@@ -10,7 +10,7 @@ export const ImagePilates = () => {
         </h2>
         <div className="h-[2px] rounded-full w-16 bg-logoColorLight lg:w-28 mt-1" />
       </div>
-      <div className="md:col-span-2 lg:col-span-4">
+      <div className="md:col-span-2 lg:col-span-4 w-[80%] m-auto">
         <SwiperPilates />
       </div>
     </div>
