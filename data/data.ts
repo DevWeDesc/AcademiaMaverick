@@ -110,6 +110,16 @@ import GymPass from "../public/logo-gympass.jpg";
 import GuruPass from "../public/Gurupass.png";
 import WellHub from "../public/logoWellhub.png";
 
+import imagePilates1 from "../public/FotosPilates/1.png";
+import imagePilates2 from "../public/FotosPilates/2.png";
+import imagePilates3 from "../public/FotosPilates/3.png";
+import imagePilates4 from "../public/FotosPilates/4.png";
+import imagePilates5 from "../public/FotosPilates/5.png";
+import imagePilates6 from "../public/FotosPilates/6.png";
+import imagePilates7 from "../public/FotosPilates/7.png";
+import imagePilates8 from "../public/FotosPilates/8.png";
+import { StaticImageData } from "next/image";
+
 export const DataNav: IDataNav[] = [
   { name: "Inicio", url: "#init" },
   { name: "Sobre Nós", url: "#about" },
@@ -393,4 +403,19 @@ export const comentsData: IComents[] = [
     name: "João Pedro",
     content: `A mais linda e sofisticada academia de Mauá ♥️ Professores e recepcionistas extremamente educados e profissionais.`,
   },
+];
+
+interface IImagePilates {
+  imageUrl: string | StaticImageData;
+}
+
+export const imagePilates: IImagePilates[] = [
+  { imageUrl: imagePilates1 },
+  { imageUrl: imagePilates2 },
+  { imageUrl: imagePilates3 },
+  { imageUrl: imagePilates4 },
+  { imageUrl: imagePilates5 },
+  { imageUrl: imagePilates6 },
+  { imageUrl: imagePilates7 },
+  { imageUrl: imagePilates8 },
 ];
