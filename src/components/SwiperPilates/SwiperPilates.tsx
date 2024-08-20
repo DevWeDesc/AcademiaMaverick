@@ -14,11 +14,15 @@ export const SwiperPilates = () => {
       slidesPerView={2}
       navigation={true}
       modules={[Navigation]}
+      style={{ padding: 40 }}
       className="mySwiper"
-      spaceBetween={40}
+      spaceBetween={60}
     >
       {imagePilates.map((item, index) => (
-        <SwiperSlide key={index} className="cursor-grab active:cursor-grabbing">
+        <SwiperSlide
+          key={index}
+          className="cursor-grab active:cursor-grabbing border border-logoColor shadow-card shadow-logoColorLight"
+        >
           <Image alt="" src={item.imageUrl} />
         </SwiperSlide>
       ))}
