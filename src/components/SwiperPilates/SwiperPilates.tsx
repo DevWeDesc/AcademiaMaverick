@@ -9,9 +9,21 @@ import Image from "next/image";
 import { imagePilates } from "../../../data/data";
 
 export const SwiperPilates = () => {
+  const [slidesPerView, setSlidesPerView] = useState(2);
+  useEffect(() => {
+    if (window.innerWidth >= 1024) {
+      setSlidesPerView(2);
+    } else if (window.innerWidth >= 658) {
+      setSlidesPerView(2);
+    } else if (window.innerWidth >= 558) {
+      setSlidesPerView(1);
+    } else {
+      setSlidesPerView(1);
+    }
+  }, []);
   return (
     <Swiper
-      slidesPerView={2}
+      slidesPerView={slidesPerView}
       navigation={true}
       modules={[Navigation]}
       style={{ padding: 40 }}
@@ -21,7 +33,7 @@ export const SwiperPilates = () => {
       {imagePilates.map((item, index) => (
         <SwiperSlide
           key={index}
-          className="cursor-grab active:cursor-grabbing border border-logoColor shadow-card shadow-logoColorLight"
+          className="cursor-grab active:cursor-grabbing border border-logoColor hover:shadow-card hover:shadow-logoColorLight"
         >
           <Image alt="" src={item.imageUrl} />
         </SwiperSlide>
