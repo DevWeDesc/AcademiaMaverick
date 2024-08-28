@@ -12,11 +12,17 @@ export const Header = () => {
   };
 
   return (
-    <div className="fixed w-full z-10 top-0 bg-black pl-3 pr-5 flex items-center justify-between lg:px-20 lg:py-1 lg:border-b-[1px] lg:border-[#222222] 4xl:px-96">
+    <div className="fixed w-full z-10 top-0 bg-black pl-3 pr-5 grid grid-cols-4 place-items-center lg:flex lg:items-center lg:justify-between lg:px-20 lg:py-1 lg:border-b-[1px] lg:border-[#222222] 4xl:px-96">
       <Image alt="Logo da empresa" className="w-28" src={Logo} />
 
-      <p className="font-sans text-xs lg:text-sm font-semibold text-white hover:text-logoColor transition-colors">
-        Academia 24hrs
+      <p className="col-span-2 text-center font-sans  font-semibold text-white hover:text-logoColor transition-colors">
+        <span className="text-[10px] lg:text-xs border-b uppercase px-2 border-current">
+          Academia
+        </span>{" "}
+        <br />
+        <span className="text-base text-center font-sans lg:text-lg text-current font-semibold text-white">
+          24h
+        </span>
       </p>
       <div
         onClick={handleOpenHamburguer}

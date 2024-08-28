@@ -1,10 +1,8 @@
 "use client";
 import Image from "next/image";
 import React, { useState } from "react";
-import ImageBannerMobile from "../../public/ImageBannerMobile.png";
-import ImageBannerDektop from "../../public/ImageBannerDektop.png";
 import { ChevronRight } from "lucide-react";
-import image00088 from "../../public/imagesMaverick/image00088.jpeg";
+import image00001 from "/public/imagesSwiper/1.png";
 
 export const Banner = () => {
   const [transitionButton, setTransitionButton] = useState(false);
@@ -15,12 +13,12 @@ export const Banner = () => {
           <Image
             className="w-full lg:hidden mb-16"
             alt="Imagem do banner"
-            src={image00088}
+            src={image00001}
           />
           <Image
             className="hidden object-cover lg:absolute lg:block h-full w-auto"
             alt="Imagem do banner"
-            src={image00088}
+            src={image00001}
           />
         </div>
         <div className="relative bottom-10 flex flex-col items-center gap-1 p-5 bg-transparent text-white lg:bottom-0 lg:justify-center lg:h-full lg:items-center lg:w-full lg:px-28">

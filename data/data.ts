@@ -9,14 +9,15 @@ import {
 import PhotoPrimaryComent from "../public/ImageWesley.jpeg";
 import PhotoSecondaryComent from "../public/imageUserFeedback.png";
 import PhotoTerceryComent from "../public/imgeUserComent2.png";
-import image00001 from "../public/imagesMaverick/image00001.jpeg";
-import image00002 from "../public/imagesMaverick/image00002.jpeg";
-import image00003 from "../public/imagesMaverick/image00003.jpeg";
-import image00004 from "../public/imagesMaverick/image00004.jpeg";
-import image00005 from "../public/imagesMaverick/image00005.jpeg";
-import image00006 from "../public/imagesMaverick/image00006.jpeg";
-import image00007 from "../public/imagesMaverick/image00007.jpeg";
-import image00008 from "../public/imagesMaverick/image00008.jpeg";
+import image00001 from "../public/imagesSwiper/1.png";
+import image00002 from "../public/imagesSwiper/2.png";
+import image00003 from "../public/imagesSwiper/3.png";
+import image00004 from "../public/imagesSwiper/4.png";
+import image00005 from "../public/imagesSwiper/5.png";
+import image00006 from "../public/imagesSwiper/6.png";
+import image00007 from "../public/imagesSwiper/7.png";
+import image00008 from "../public/imagesSwiper/8.png";
+// import image00008 from "../public/imagesMaverick/image00008.jpeg";
 import image00009 from "../public/imagesMaverick/image00009.jpeg";
 import image00010 from "../public/imagesMaverick/image00010.jpeg";
 import image00011 from "../public/imagesMaverick/image00011.jpeg";
@@ -138,6 +139,7 @@ export const imagesAbout = [
   { image: image00005 },
   { image: image00006 },
   { image: image00007 },
+  { image: image00008 },
 ];
 
 export const ActiviesData: IActivies[] = [
